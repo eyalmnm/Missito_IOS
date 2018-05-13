@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="92" id="Z8d-sU-Ksw" customClass="OutgoingContactChatCell" customModule="Missito" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="92"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Z8d-sU-Ksw" id="RcB-GE-75h">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="92"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="amQ-9f-4v0" customClass="BubbleView" customModule="Missito" customModuleProvider="target">
+                        <rect key="frame" x="81.5" y="2" width="277" height="87.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ok FineOk FineOk FineOk FineOk FineOk FineOk FineOk Fine" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YLi-g6-R7U">
+                                <rect key="frame" x="78" y="10" width="190.5" height="31.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="contact" translatesAutoresizingMaskIntoConstraints="NO" id="pzR-jC-AJQ">
+                                <rect key="frame" x="14" y="10" width="50" height="50"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="5kd-cf-0qc"/>
+                                    <constraint firstAttribute="width" constant="50" id="cmB-h0-mYn"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColor">
+                                        <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="753" text="99:99" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M7T-e2-9nP">
+                                <rect key="frame" x="222" y="64.5" width="29.5" height="12"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="12" id="NsU-Re-WN3"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="29.5" id="tPu-JK-3pZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" verticalHuggingPriority="251" horizontalCompressionResistancePriority="753" image="chat_received" translatesAutoresizingMaskIntoConstraints="NO" id="mJO-nU-uLF">
+                                <rect key="frame" x="250.5" y="64.5" width="17" height="12"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="12" id="YEg-bt-V49"/>
+                                    <constraint firstAttribute="width" constant="17" id="f4v-fd-v2u"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="749" text="Ok fineOk FineOk FineOk FineOk FineOk FineOk FineOk FineOk FineOk FineOk Fine" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="90D-5x-5Mb">
+                                <rect key="frame" x="78" y="45" width="190.5" height="12"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="M7T-e2-9nP" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="amQ-9f-4v0" secondAttribute="leading" constant="8" id="55d-EJ-7z7"/>
+                            <constraint firstItem="YLi-g6-R7U" firstAttribute="top" secondItem="amQ-9f-4v0" secondAttribute="top" priority="999" constant="10" id="742-22-X2U"/>
+                            <constraint firstAttribute="trailing" secondItem="90D-5x-5Mb" secondAttribute="trailing" constant="9" id="BCj-HW-YkD"/>
+                            <constraint firstAttribute="bottom" secondItem="mJO-nU-uLF" secondAttribute="bottom" constant="11" id="F5K-hH-D6c"/>
+                            <constraint firstAttribute="trailing" secondItem="YLi-g6-R7U" secondAttribute="trailing" constant="9" id="JSH-CZ-7P7"/>
+                            <constraint firstAttribute="trailing" secondItem="mJO-nU-uLF" secondAttribute="trailing" constant="9" id="LBd-iZ-r9B"/>
+                            <constraint firstAttribute="bottom" secondItem="M7T-e2-9nP" secondAttribute="bottom" constant="11" id="LQ3-Yb-ZRZ"/>
+                            <constraint firstItem="YLi-g6-R7U" firstAttribute="leading" secondItem="pzR-jC-AJQ" secondAttribute="trailing" constant="14" id="NLA-x8-EvA"/>
+                            <constraint firstItem="90D-5x-5Mb" firstAttribute="leading" secondItem="pzR-jC-AJQ" secondAttribute="trailing" constant="14" id="QJo-RF-KxV"/>
+                            <constraint firstItem="90D-5x-5Mb" firstAttribute="top" secondItem="YLi-g6-R7U" secondAttribute="bottom" constant="3" id="Zeh-vz-85p"/>
+                            <constraint firstItem="pzR-jC-AJQ" firstAttribute="top" secondItem="amQ-9f-4v0" secondAttribute="top" constant="10" id="dZc-3N-t28"/>
+                            <constraint firstItem="mJO-nU-uLF" firstAttribute="leading" secondItem="M7T-e2-9nP" secondAttribute="trailing" constant="-1" id="o9K-wQ-xhG"/>
+                            <constraint firstItem="M7T-e2-9nP" firstAttribute="top" secondItem="90D-5x-5Mb" secondAttribute="bottom" constant="7.5" id="pLX-JJ-hsW"/>
+                            <constraint firstItem="pzR-jC-AJQ" firstAttribute="leading" secondItem="amQ-9f-4v0" secondAttribute="leading" constant="14" id="sNi-Cf-iVF"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="18"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="amQ-9f-4v0" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="RcB-GE-75h" secondAttribute="leading" constant="80" id="cDV-A1-kpL"/>
+                    <constraint firstItem="amQ-9f-4v0" firstAttribute="top" secondItem="RcB-GE-75h" secondAttribute="top" constant="2" id="hBg-b9-YTh"/>
+                    <constraint firstAttribute="trailing" secondItem="amQ-9f-4v0" secondAttribute="trailing" constant="16" id="oUM-xJ-77Z"/>
+                    <constraint firstAttribute="bottom" secondItem="amQ-9f-4v0" secondAttribute="bottom" constant="2" id="thJ-nc-kmY"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="bubble" destination="amQ-9f-4v0" id="04T-54-pgv"/>
+                <outlet property="contactImage" destination="pzR-jC-AJQ" id="9Vo-ii-62v"/>
+                <outlet property="contactNameLabel" destination="YLi-g6-R7U" id="GIK-7Y-1dU"/>
+                <outlet property="contactPhonesAndEmailsLabel" destination="90D-5x-5Mb" id="xen-xh-uih"/>
+                <outlet property="statusImageView" destination="mJO-nU-uLF" id="Leb-o0-rII"/>
+                <outlet property="timeLabel" destination="M7T-e2-9nP" id="uLQ-58-9uS"/>
+            </connections>
+            <point key="canvasLocation" x="-59.5" y="-233"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="chat_received" width="15" height="15"/>
+        <image name="contact" width="15" height="15"/>
+    </resources>
+</document>

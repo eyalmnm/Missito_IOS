@@ -1,0 +1,11 @@
+.gitignore
+out/
+gen/
+*.ipr
+*.iml
+*.iws
+.DS_Store
+xcuserdata/
+
+#CocoaPods
+Pods

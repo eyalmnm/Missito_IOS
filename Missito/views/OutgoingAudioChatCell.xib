@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="59" id="8ZV-7x-PXe" customClass="OutgoingAudioChatCell" customModule="Missito" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="337" height="59"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8ZV-7x-PXe" id="WmK-Oy-YF7">
+                <rect key="frame" x="0.0" y="0.0" width="337" height="58.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ms1-vL-q7J" customClass="AudioPlayerView" customModule="Missito" customModuleProvider="target">
+                        <rect key="frame" x="110" y="2.5" width="211" height="54"/>
+                        <subviews>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qVa-NY-GIx">
+                                <rect key="frame" x="3" y="3" width="48" height="48"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="48" id="V7e-nI-uAj"/>
+                                </constraints>
+                                <state key="normal" title="&gt;"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="24"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="play:" destination="ms1-vL-q7J" eventType="touchUpInside" id="ck4-xH-xOy"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" verticalHuggingPriority="251" image="chat_received" translatesAutoresizingMaskIntoConstraints="NO" id="J3n-7C-jdB">
+                                <rect key="frame" x="185" y="31" width="17" height="12"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="12" id="PLn-2b-DA2"/>
+                                    <constraint firstAttribute="width" constant="17" id="UjB-gg-j90"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="99:99" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bQi-oL-b7x">
+                                <rect key="frame" x="155" y="31" width="30" height="12"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="12" id="9dm-ZH-zjW"/>
+                                    <constraint firstAttribute="width" constant="30" id="n81-JX-RxF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="N4A-a3-Ab8" customClass="MissitoAudioMessageSlider" customModule="Missito" customModuleProvider="target">
+                                <rect key="frame" x="63" y="11" width="141" height="21"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="TPy-OM-fhg"/>
+                                </constraints>
+                                <color key="minimumTrackTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="maximumTrackTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="thumbTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="slide:" destination="ms1-vL-q7J" eventType="valueChanged" id="DCR-oQ-nLv"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="99:99" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZUf-S7-evZ">
+                                <rect key="frame" x="60" y="34" width="24" height="8"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="24" id="0zC-yC-BNz"/>
+                                    <constraint firstAttribute="height" constant="8" id="aWc-JE-oCL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="8"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="N4A-a3-Ab8" firstAttribute="top" secondItem="ms1-vL-q7J" secondAttribute="top" constant="11" id="1xz-Mh-tX5"/>
+                            <constraint firstAttribute="bottom" secondItem="J3n-7C-jdB" secondAttribute="bottom" constant="11" id="6Or-Rc-uCg"/>
+                            <constraint firstAttribute="bottom" secondItem="ZUf-S7-evZ" secondAttribute="bottom" constant="12" id="8VJ-RE-0pa"/>
+                            <constraint firstItem="J3n-7C-jdB" firstAttribute="leading" secondItem="bQi-oL-b7x" secondAttribute="trailing" constant="0.5" id="HCK-Og-sbn"/>
+                            <constraint firstItem="bQi-oL-b7x" firstAttribute="top" secondItem="N4A-a3-Ab8" secondAttribute="bottom" id="Iw2-Wv-quK"/>
+                            <constraint firstAttribute="bottom" secondItem="bQi-oL-b7x" secondAttribute="bottom" constant="11" id="MEy-1w-yrc"/>
+                            <constraint firstAttribute="bottom" secondItem="qVa-NY-GIx" secondAttribute="bottom" constant="3" id="Vzi-NY-ZtO"/>
+                            <constraint firstItem="qVa-NY-GIx" firstAttribute="top" secondItem="ms1-vL-q7J" secondAttribute="top" constant="3" id="auC-L8-oUo"/>
+                            <constraint firstItem="ZUf-S7-evZ" firstAttribute="leading" secondItem="qVa-NY-GIx" secondAttribute="trailing" constant="9" id="r94-qo-91S"/>
+                            <constraint firstItem="N4A-a3-Ab8" firstAttribute="leading" secondItem="qVa-NY-GIx" secondAttribute="trailing" constant="14" id="raM-GV-D3n"/>
+                            <constraint firstItem="qVa-NY-GIx" firstAttribute="leading" secondItem="ms1-vL-q7J" secondAttribute="leading" constant="3" id="swy-Ih-HXm"/>
+                            <constraint firstAttribute="trailing" secondItem="J3n-7C-jdB" secondAttribute="trailing" constant="9" id="xEp-Xu-sCJ"/>
+                            <constraint firstAttribute="trailing" secondItem="N4A-a3-Ab8" secondAttribute="trailing" constant="9" id="xOg-iQ-rdi"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="27"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <outlet property="currentTimeLabel" destination="ZUf-S7-evZ" id="UfN-Z0-hMP"/>
+                            <outlet property="playButton" destination="qVa-NY-GIx" id="a28-Lo-JCj"/>
+                            <outlet property="slider" destination="N4A-a3-Ab8" id="iix-c6-inu"/>
+                        </connections>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="ms1-vL-q7J" secondAttribute="bottom" constant="2" id="0zy-22-Xbe"/>
+                    <constraint firstAttribute="trailing" secondItem="ms1-vL-q7J" secondAttribute="trailing" constant="16" id="Efn-Fh-zHa"/>
+                    <constraint firstItem="ms1-vL-q7J" firstAttribute="leading" secondItem="WmK-Oy-YF7" secondAttribute="leading" constant="110" id="VXA-b5-re3"/>
+                    <constraint firstItem="ms1-vL-q7J" firstAttribute="top" secondItem="WmK-Oy-YF7" secondAttribute="top" constant="2" id="yhU-Fb-vpM"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="audioPlayerView" destination="ms1-vL-q7J" id="x2h-BY-zqT"/>
+                <outlet property="bubble" destination="ms1-vL-q7J" id="pXc-D1-dqF"/>
+                <outlet property="statusImageView" destination="J3n-7C-jdB" id="tbi-fS-RW8"/>
+                <outlet property="timeLabel" destination="bQi-oL-b7x" id="92u-fS-dSh"/>
+            </connections>
+            <point key="canvasLocation" x="-97.5" y="-21.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="chat_received" width="15" height="15"/>
+    </resources>
+</document>

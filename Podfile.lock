@@ -1,0 +1,198 @@
+PODS:
+  - AFNetworking (3.1.0):
+    - AFNetworking/NSURLSession (= 3.1.0)
+    - AFNetworking/Reachability (= 3.1.0)
+    - AFNetworking/Security (= 3.1.0)
+    - AFNetworking/Serialization (= 3.1.0)
+    - AFNetworking/UIKit (= 3.1.0)
+  - AFNetworking/NSURLSession (3.1.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.1.0)
+  - AFNetworking/Security (3.1.0)
+  - AFNetworking/Serialization (3.1.0)
+  - AFNetworking/UIKit (3.1.0):
+    - AFNetworking/NSURLSession
+  - CocoaLumberjack (2.3.0):
+    - CocoaLumberjack/Default (= 2.3.0)
+    - CocoaLumberjack/Extensions (= 2.3.0)
+  - CocoaLumberjack/Core (2.3.0)
+  - CocoaLumberjack/Default (2.3.0):
+    - CocoaLumberjack/Core
+  - CocoaLumberjack/Extensions (2.3.0):
+    - CocoaLumberjack/Default
+  - Crashlytics (3.9.3):
+    - Fabric (~> 1.7.2)
+  - CryptoSwift (0.7.2)
+  - DateToolsSwift (4.0.0)
+  - Fabric (1.7.2)
+  - FaceAware (1.2.0)
+  - Firebase/Core (4.8.0):
+    - FirebaseAnalytics (= 4.0.5)
+    - FirebaseCore (= 4.0.13)
+  - Firebase/Messaging (4.8.0):
+    - Firebase/Core
+    - FirebaseMessaging (= 2.0.8)
+  - FirebaseAnalytics (4.0.5):
+    - FirebaseCore (~> 4.0)
+    - FirebaseInstanceID (~> 2.0)
+    - "GoogleToolboxForMac/NSData+zlib (~> 2.1)"
+    - nanopb (~> 0.3)
+  - FirebaseCore (4.0.13):
+    - "GoogleToolboxForMac/NSData+zlib (~> 2.1)"
+  - FirebaseInstanceID (2.0.8):
+    - FirebaseCore (~> 4.0)
+  - FirebaseMessaging (2.0.8):
+    - FirebaseAnalytics (~> 4.0)
+    - FirebaseCore (~> 4.0)
+    - FirebaseInstanceID (~> 2.0)
+    - GoogleToolboxForMac/Logger (~> 2.1)
+    - Protobuf (~> 3.1)
+  - FontAwesome.swift (1.2.0)
+  - Gloss (1.2.4)
+  - GoogleToolboxForMac/Defines (2.1.3)
+  - GoogleToolboxForMac/Logger (2.1.3):
+    - GoogleToolboxForMac/Defines (= 2.1.3)
+  - "GoogleToolboxForMac/NSData+zlib (2.1.3)":
+    - GoogleToolboxForMac/Defines (= 2.1.3)
+  - IQKeyboardManagerSwift (5.0.7)
+  - JSONWebToken (2.2.0)
+  - KeychainSwift (6.0.2)
+  - libPhoneNumber-iOS (0.9.13)
+  - M13ProgressSuite (1.2.9)
+  - MBProgressHUD (1.0.0)
+  - MQTTClient (0.10.1):
+    - MQTTClient/Core (= 0.10.1)
+  - MQTTClient/Core (0.10.1):
+    - MQTTClient/Manager
+    - MQTTClient/Min
+  - MQTTClient/Manager (0.10.1):
+    - MQTTClient/Min
+  - MQTTClient/Min (0.10.1)
+  - nanopb (0.3.8):
+    - nanopb/decode (= 0.3.8)
+    - nanopb/encode (= 0.3.8)
+  - nanopb/decode (0.3.8)
+  - nanopb/encode (0.3.8)
+  - "NSDate+TimeAgo (1.0.6)"
+  - NVActivityIndicatorView (4.1.1):
+    - NVActivityIndicatorView/Presenter (= 4.1.1)
+  - NVActivityIndicatorView/Presenter (4.1.1)
+  - OpenSSL (1.0.210)
+  - Protobuf (3.5.0)
+  - Realm (3.0.2):
+    - Realm/Headers (= 3.0.2)
+  - Realm/Headers (3.0.2)
+  - RealmSwift (3.0.2):
+    - Realm (= 3.0.2)
+  - SignalProtocolC (0.1.0)
+  - URITemplate (2.0.3)
+
+DEPENDENCIES:
+  - AFNetworking (~> 3.0)
+  - CocoaLumberjack (~> 2.3.0)
+  - Crashlytics (~> 3.9.3)
+  - CryptoSwift (= 0.7.2)
+  - DateToolsSwift (~> 4.0.0)
+  - Fabric (~> 1.7.2)
+  - FaceAware
+  - Firebase/Messaging
+  - FontAwesome.swift (~> 1.2.0)
+  - Gloss (~> 1.2)
+  - IQKeyboardManagerSwift
+  - JSONWebToken (from `https://github.com/kylef/JSONWebToken.swift`)
+  - KeychainSwift (~> 6.0)
+  - libPhoneNumber-iOS (~> 0.8)
+  - M13ProgressSuite
+  - MBProgressHUD (~> 1.0.0)
+  - MQTTClient
+  - "NSDate+TimeAgo"
+  - NVActivityIndicatorView
+  - OpenSSL
+  - RealmSwift
+  - SignalProtocolC (from `https://github.com/enos/libsignal-protocol-c.git`)
+  - URITemplate
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - AFNetworking
+    - CocoaLumberjack
+    - Crashlytics
+    - CryptoSwift
+    - DateToolsSwift
+    - Fabric
+    - FaceAware
+    - Firebase
+    - FirebaseAnalytics
+    - FirebaseCore
+    - FirebaseInstanceID
+    - FirebaseMessaging
+    - FontAwesome.swift
+    - Gloss
+    - GoogleToolboxForMac
+    - IQKeyboardManagerSwift
+    - KeychainSwift
+    - libPhoneNumber-iOS
+    - M13ProgressSuite
+    - MBProgressHUD
+    - MQTTClient
+    - nanopb
+    - "NSDate+TimeAgo"
+    - NVActivityIndicatorView
+    - OpenSSL
+    - Protobuf
+    - Realm
+    - RealmSwift
+    - URITemplate
+
+EXTERNAL SOURCES:
+  JSONWebToken:
+    :git: https://github.com/kylef/JSONWebToken.swift
+  SignalProtocolC:
+    :git: https://github.com/enos/libsignal-protocol-c.git
+
+CHECKOUT OPTIONS:
+  JSONWebToken:
+    :commit: 9045d647eec6f37b6d536243e3ad02c9a12411e3
+    :git: https://github.com/kylef/JSONWebToken.swift
+  SignalProtocolC:
+    :commit: cc289052556b6653e2037aecb5bc107529f374d3
+    :git: https://github.com/enos/libsignal-protocol-c.git
+
+SPEC CHECKSUMS:
+  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  CocoaLumberjack: 97fab7ee5f507fe54445cca7ea80f926729cfd15
+  Crashlytics: dbb07d01876c171c5ccbdf7826410380189e452c
+  CryptoSwift: cd2158be2bf639aabc63ec804707c7137c90157c
+  DateToolsSwift: 875d97ff9e3a5d54abdd67a269b3f51c757b71ab
+  Fabric: 9cd6a848efcf1b8b07497e0b6a2e7d336353ba15
+  FaceAware: 421436f9d16aacdb26ffcf8e5a39a1dd68630395
+  Firebase: 710decbbc6d9d48530e9a5dba3209740c3532e05
+  FirebaseAnalytics: 5b02a63ead2c3f0259cfc7f15e053e440587ecf8
+  FirebaseCore: 3c02ec652db3d03fdc8bc6d9154af3e20d64b6f5
+  FirebaseInstanceID: 81df5805a08001e69138664bdd02c6719a9ac80f
+  FirebaseMessaging: dfdcd307c2382290a1e297a81d0f18370f5b1bcd
+  FontAwesome.swift: 60063e3f19ba4801155d4b0f2334ab7585763ab3
+  Gloss: 4e036074610fdb993abcb958ebcd7332588e2333
+  GoogleToolboxForMac: 2501e2ad72a52eb3dfe7bd9aee7dad11b858bd20
+  IQKeyboardManagerSwift: 30fb3a61de1af53a95e02b80fb54ed0a19d5ede5
+  JSONWebToken: ef88f92823ef1f3cbac791b320f8b6961c885bad
+  KeychainSwift: a261364334000afa8fab0894390d5d00dd226d4c
+  libPhoneNumber-iOS: e444379ac18bbfbdefad571da735b2cd7e096caa
+  M13ProgressSuite: ea9f7263e73e9215e6849dfa54e29ee0ad6a145c
+  MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
+  MQTTClient: a0f16ceec50bf80f606c37966c0b7fa8d9c9e739
+  nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
+  "NSDate+TimeAgo": 35601c619b2d59290055e4fe76e61d97677a2360
+  NVActivityIndicatorView: 60109b9bf46efc2e71ab81453196ccdfdfeea870
+  OpenSSL: 246ffb948e9d56466727fd318134af35f5aa764e
+  Protobuf: 8a9838fba8dae3389230e1b7f8c104aa32389c03
+  Realm: 6f23fd1f178a09342eac21bfa7c2bf4312a7a180
+  RealmSwift: 695393add1b8f9d5fa75dd16e6355cf3935f71e2
+  SignalProtocolC: f334d515a2eff552a17fa2739907172be583abce
+  URITemplate: ace0c4c46dcf8afe6e89b4060621852886b15c3b
+
+PODFILE CHECKSUM: 03bf6524178257f0fd7b05b8e11959b4c6656ea1
+
+COCOAPODS: 1.5.0

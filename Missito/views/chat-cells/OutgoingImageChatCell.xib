@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="sf-ui-display-regular.otf">
+            <string>SFUIDisplay-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="107" id="KGk-i7-Jjw" customClass="OutgoingImageChatCell" customModule="Missito" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="104"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="103.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bhj-Yx-QKs" customClass="BubbleImageView" customModule="Missito" customModuleProvider="target">
+                        <rect key="frame" x="204" y="1.5" width="100" height="100"/>
+                        <constraints>
+                            <constraint firstAttribute="height" priority="999" constant="100" id="7fe-ZT-xwL"/>
+                            <constraint firstAttribute="width" constant="100" id="R51-4c-aMU"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="18"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                <real key="value" value="0.5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MJ3-mT-3D0">
+                        <rect key="frame" x="164" y="34" width="35" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="35" id="VOo-QE-223"/>
+                            <constraint firstAttribute="height" constant="35" id="bbH-V2-pDg"/>
+                        </constraints>
+                        <color key="tintColor" red="0.0" green="0.47843137254901957" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <state key="normal" image="forward"/>
+                        <connections>
+                            <action selector="onForward:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="50Y-XJ-REz"/>
+                        </connections>
+                    </button>
+                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Pwg-h0-QDr">
+                        <rect key="frame" x="211" y="62.5" width="86" height="2"/>
+                    </progressView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TNq-Xf-O1U">
+                        <rect key="frame" x="250" y="70.5" width="47.5" height="12"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chat_sent" translatesAutoresizingMaskIntoConstraints="NO" id="2MV-Mq-ON9">
+                                <rect key="frame" x="26.5" y="0.0" width="15" height="12"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" priority="999" constant="15" id="aap-rg-qDG"/>
+                                    <constraint firstAttribute="height" constant="12" id="tpK-ep-1zt"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="14:48" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mUX-3k-2fj">
+                                <rect key="frame" x="6" y="1" width="20.5" height="10"/>
+                                <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="8"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.29567101883561642" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="12" id="F54-4w-MA7"/>
+                            <constraint firstAttribute="trailing" secondItem="2MV-Mq-ON9" secondAttribute="trailing" constant="6" id="Oeh-Us-sW4"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="mUX-3k-2fj" secondAttribute="trailing" constant="6" id="PPN-V5-fKg"/>
+                            <constraint firstAttribute="bottom" secondItem="mUX-3k-2fj" secondAttribute="bottom" constant="1" id="SDd-jD-xwh"/>
+                            <constraint firstItem="2MV-Mq-ON9" firstAttribute="leading" secondItem="mUX-3k-2fj" secondAttribute="trailing" id="U0y-j2-fzC"/>
+                            <constraint firstItem="2MV-Mq-ON9" firstAttribute="top" secondItem="TNq-Xf-O1U" secondAttribute="top" constant="0.5" id="VuX-U5-oB6"/>
+                            <constraint firstItem="mUX-3k-2fj" firstAttribute="top" secondItem="TNq-Xf-O1U" secondAttribute="top" constant="1" id="dIh-3d-xma"/>
+                            <constraint firstItem="mUX-3k-2fj" firstAttribute="leading" secondItem="TNq-Xf-O1U" secondAttribute="leading" constant="6" id="pQg-Lu-N4b"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="6"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vfH-b4-5PB">
+                        <rect key="frame" x="257" y="7" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="7Xh-GH-rNh"/>
+                            <constraint firstAttribute="width" constant="40" id="ZKN-mV-xnp"/>
+                        </constraints>
+                        <inset key="imageEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="8"/>
+                        <state key="normal" image="chat_more_vert"/>
+                        <connections>
+                            <action selector="onMore:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="eQu-h1-m3M"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="bhj-Yx-QKs" secondAttribute="bottom" constant="2" id="3BU-rw-3Wh"/>
+                    <constraint firstItem="vfH-b4-5PB" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="7" id="CYK-Dn-U2i"/>
+                    <constraint firstItem="Pwg-h0-QDr" firstAttribute="leading" secondItem="bhj-Yx-QKs" secondAttribute="leading" constant="7" id="DVf-yE-ozG"/>
+                    <constraint firstItem="TNq-Xf-O1U" firstAttribute="top" secondItem="Pwg-h0-QDr" secondAttribute="bottom" constant="6" id="Dnv-fx-vru"/>
+                    <constraint firstItem="MJ3-mT-3D0" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="QcY-F7-ubB"/>
+                    <constraint firstAttribute="bottom" secondItem="TNq-Xf-O1U" secondAttribute="bottom" constant="21" id="S7P-gu-tei"/>
+                    <constraint firstItem="bhj-Yx-QKs" firstAttribute="leading" secondItem="MJ3-mT-3D0" secondAttribute="trailing" constant="5" id="eBZ-Ym-y04"/>
+                    <constraint firstAttribute="trailing" secondItem="TNq-Xf-O1U" secondAttribute="leading" constant="70" id="g1w-KA-oNU"/>
+                    <constraint firstItem="bhj-Yx-QKs" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="H2p-sc-9uM" secondAttribute="leading" priority="999" constant="134" id="hg1-fM-O3o"/>
+                    <constraint firstItem="Pwg-h0-QDr" firstAttribute="trailing" secondItem="bhj-Yx-QKs" secondAttribute="trailing" constant="-7" id="ikT-pA-EpO"/>
+                    <constraint firstItem="bhj-Yx-QKs" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" priority="999" constant="2" id="jK8-3Y-RLV"/>
+                    <constraint firstAttribute="trailing" secondItem="bhj-Yx-QKs" secondAttribute="trailing" constant="16" id="pq8-FD-5kb"/>
+                    <constraint firstAttribute="trailing" secondItem="vfH-b4-5PB" secondAttribute="trailing" constant="23" id="vaE-ze-TWT"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="bubble" destination="bhj-Yx-QKs" id="2ep-7c-Hg0"/>
+                <outlet property="heightConstraint" destination="7fe-ZT-xwL" id="fpW-sU-56W"/>
+                <outlet property="imgView" destination="bhj-Yx-QKs" id="JvU-jc-qGf"/>
+                <outlet property="leadingConstraint" destination="hg1-fM-O3o" id="gVb-p9-k1B"/>
+                <outlet property="moreButton" destination="vfH-b4-5PB" id="03u-Yy-lfI"/>
+                <outlet property="progressView" destination="Pwg-h0-QDr" id="Rqv-i6-omD"/>
+                <outlet property="shareButton" destination="MJ3-mT-3D0" id="7Oz-Ny-Osw"/>
+                <outlet property="statusImageTrailingConstraint" destination="Oeh-Us-sW4" id="xIO-Gn-Hcg"/>
+                <outlet property="statusImageView" destination="2MV-Mq-ON9" id="U0y-Fw-CkP"/>
+                <outlet property="statusImageWidthConstraint" destination="aap-rg-qDG" id="rnE-V9-35x"/>
+                <outlet property="timeLabel" destination="mUX-3k-2fj" id="eOJ-jP-UU2"/>
+                <outlet property="trailingConstraint" destination="pq8-FD-5kb" id="PNA-u0-WdG"/>
+                <outlet property="widthConstraint" destination="R51-4c-aMU" id="JCk-YM-0kn"/>
+            </connections>
+            <point key="canvasLocation" x="26" y="93"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="chat_more_vert" width="48" height="48"/>
+        <image name="chat_sent" width="15" height="15"/>
+        <image name="forward" width="33" height="33"/>
+    </resources>
+</document>

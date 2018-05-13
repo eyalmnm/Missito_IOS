@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="InviteView" customModule="Missito" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="7ym-6F-yXG"/>
+                <outlet property="dismissButton" destination="kUG-Dt-nbg" id="piI-64-KhQ"/>
+                <outlet property="inviteButton" destination="FK1-aK-rMW" id="YMQ-N2-AZm"/>
+                <outlet property="inviteTextLabel" destination="Oap-VI-24C" id="wF1-aA-fUb"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ixl-xn-9lf">
+                    <rect key="frame" x="37" y="238" width="300" height="190"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kUG-Dt-nbg">
+                            <rect key="frame" x="100" y="150.5" width="101" height="27"/>
+                            <state key="normal">
+                                <attributedString key="attributedTitle">
+                                    <fragment content="No, thanks">
+                                        <attributes>
+                                            <color key="NSColor" red="0.57045853140000002" green="0.57047235969999999" blue="0.57046490910000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="12" name=".AppleSystemUIFont"/>
+                                            <integer key="NSUnderline" value="1"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                            </state>
+                            <connections>
+                                <action selector="onDismiss:" destination="-1" eventType="touchUpInside" id="7rC-iu-tMS"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Invite your friends and start chatting!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oap-VI-24C">
+                            <rect key="frame" x="24" y="24" width="252" height="48"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FK1-aK-rMW">
+                            <rect key="frame" x="76" y="95" width="149" height="40"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                            <state key="normal" title="Invite"/>
+                            <connections>
+                                <action selector="onInvite:" destination="-1" eventType="touchUpInside" id="F4e-GY-C30"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="Oap-VI-24C" firstAttribute="top" secondItem="Ixl-xn-9lf" secondAttribute="top" constant="24" id="1f7-vr-l41"/>
+                        <constraint firstItem="kUG-Dt-nbg" firstAttribute="top" secondItem="FK1-aK-rMW" secondAttribute="bottom" constant="15" id="70a-Cb-Svl"/>
+                        <constraint firstItem="kUG-Dt-nbg" firstAttribute="leading" secondItem="Ixl-xn-9lf" secondAttribute="leading" constant="100" id="Rqu-cA-EDi"/>
+                        <constraint firstItem="Oap-VI-24C" firstAttribute="leading" secondItem="Ixl-xn-9lf" secondAttribute="leading" constant="24" id="SL4-G7-4S2"/>
+                        <constraint firstAttribute="height" constant="190" id="Y2Q-eA-duQ"/>
+                        <constraint firstAttribute="trailing" secondItem="FK1-aK-rMW" secondAttribute="trailing" constant="75" id="ayj-Gq-uB1"/>
+                        <constraint firstAttribute="trailing" secondItem="kUG-Dt-nbg" secondAttribute="trailing" constant="99" id="bGE-JI-gRM"/>
+                        <constraint firstAttribute="trailing" secondItem="Oap-VI-24C" secondAttribute="trailing" constant="24" id="dnc-6T-WCM"/>
+                        <constraint firstItem="FK1-aK-rMW" firstAttribute="leading" secondItem="Ixl-xn-9lf" secondAttribute="leading" constant="76" id="fNO-BX-SCi"/>
+                        <constraint firstAttribute="width" constant="300" id="t7r-xS-847"/>
+                        <constraint firstItem="FK1-aK-rMW" firstAttribute="top" secondItem="Oap-VI-24C" secondAttribute="bottom" constant="23.5" id="wDb-bX-JWQ"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="20"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Ixl-xn-9lf" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="R3P-Xg-Spr"/>
+                <constraint firstItem="Ixl-xn-9lf" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="cqX-rE-zO5"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="26.5" y="273.5"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,2765 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2A10412FAD8FB058BBF82C91 /* Pods_Missito.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61CB3B3D3613A75CE29A02D5 /* Pods_Missito.framework */; };
+		56BD4EE11CF3046A00AA4A60 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56BD4EE01CF3046A00AA4A60 /* AppDelegate.swift */; };
+		56BD4EEA1CF3046A00AA4A60 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56BD4EE91CF3046A00AA4A60 /* Assets.xcassets */; };
+		56BD4EF81CF3046A00AA4A60 /* MissitoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56BD4EF71CF3046A00AA4A60 /* MissitoTests.swift */; };
+		56BD4F031CF3046A00AA4A60 /* MissitoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56BD4F021CF3046A00AA4A60 /* MissitoUITests.swift */; };
+		5E22F9801D831E0F009176B5 /* Auth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E22F9821D831E0F009176B5 /* Auth.storyboard */; };
+		5E22F9831D831E1C009176B5 /* Chats.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E22F9851D831E1C009176B5 /* Chats.storyboard */; };
+		5E22F9861D831E20009176B5 /* Contacts.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E22F9881D831E20009176B5 /* Contacts.storyboard */; };
+		5E22F9891D831E24009176B5 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E22F98B1D831E24009176B5 /* Launch Screen.storyboard */; };
+		5E22F98C1D831E29009176B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E22F98E1D831E29009176B5 /* Main.storyboard */; };
+		5E22F98F1D831E2D009176B5 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E22F9911D831E2D009176B5 /* Settings.storyboard */; };
+		5E291FDC1D440DA5000116DD /* HipsterScriptPro.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5E291FDB1D440DA5000116DD /* HipsterScriptPro.otf */; };
+		5E2947DA1D391071003BC793 /* BrokerConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2947D01D391071003BC793 /* BrokerConnection.swift */; };
+		5E4B216F1CF5968500CED4E4 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4B216D1CF5968500CED4E4 /* Utils.swift */; };
+		5E4B217B1CF59A1F00CED4E4 /* CountryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4B217A1CF59A1F00CED4E4 /* CountryCell.swift */; };
+		5E4B6AB41D423C0A00468E22 /* Customizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4B6AB11D423C0A00468E22 /* Customizable.swift */; };
+		5E4B6AB51D423C0A00468E22 /* UINavigationController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4B6AB21D423C0A00468E22 /* UINavigationController+Extension.swift */; };
+		5E4B6AB61D423C0A00468E22 /* UITabBarController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4B6AB31D423C0A00468E22 /* UITabBarController+Extension.swift */; };
+		5E4B6ABC1D424D6400468E22 /* CustomTitleViewLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4B6ABB1D424D6400468E22 /* CustomTitleViewLabel.swift */; };
+		5E6285DA1D7F0B31007C7933 /* RecordingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6285D91D7F0B31007C7933 /* RecordingController.swift */; };
+		5E732B521D3933B500B724AE /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E732B4B1D3933B500B724AE /* AuthService.swift */; };
+		5E8F0A7B1DF9A9D000F61F94 /* CoreServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8F0A7A1DF9A9D000F61F94 /* CoreServices.swift */; };
+		5EA197B71D6F38CC000FFC75 /* Mountains.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5EA197B61D6F38CC000FFC75 /* Mountains.jpg */; };
+		5EAEEE6E1D44158500E98310 /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EAEEE6D1D44158500E98310 /* CustomTabBarController.swift */; };
+		5EB2383E1D5DF1D3001EB3C2 /* MissitoContactCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB2383D1D5DF1D3001EB3C2 /* MissitoContactCell.swift */; };
+		5EB238401D5DFA18001EB3C2 /* AllContactCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB2383F1D5DFA18001EB3C2 /* AllContactCell.swift */; };
+		5EC58F761D40DD01007F4686 /* ContactsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC58F751D40DD01007F4686 /* ContactsController.swift */; };
+		5EC58F841D410336007F4686 /* ChatsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC58F831D410336007F4686 /* ChatsController.swift */; };
+		5EC8A5BC1D422E2E0096B1A0 /* FontAwesome.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5EC8A5BB1D422E2E0096B1A0 /* FontAwesome.otf */; };
+		5ECBC1A71D631183008C28D7 /* ChatsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECBC1A61D631183008C28D7 /* ChatsCell.swift */; };
+		5ECBC1A91D6311AB008C28D7 /* NotificationBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECBC1A81D6311AB008C28D7 /* NotificationBubble.swift */; };
+		5ECBC1BE1D63368B008C28D7 /* ChatController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECBC1BD1D63368B008C28D7 /* ChatController.swift */; };
+		5ECFBF121CF5A665003B9F47 /* PhoneNumberCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECFBF111CF5A665003B9F47 /* PhoneNumberCell.swift */; };
+		5ECFBF141CF5D309003B9F47 /* DiallingCodes.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5ECFBF131CF5D309003B9F47 /* DiallingCodes.plist */; };
+		5ED21B9F1D1413BB0095FCE4 /* MissitoRealmDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED21B991D1413BB0095FCE4 /* MissitoRealmDB.swift */; };
+		5EDCA8211CF6FD64001DFEC3 /* CountryPickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDCA81E1CF6FD64001DFEC3 /* CountryPickerController.swift */; };
+		5EDCA8221CF6FD64001DFEC3 /* RegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDCA81F1CF6FD64001DFEC3 /* RegisterController.swift */; };
+		5EDCA8241CF708AB001DFEC3 /* VerificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDCA8231CF708AB001DFEC3 /* VerificationController.swift */; };
+		5EEB942D1D6C430200395843 /* MessageTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEB942C1D6C430200395843 /* MessageTextField.swift */; };
+		5EEB942F1D6C72F000395843 /* MessageToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEB942E1D6C72F000395843 /* MessageToolbar.swift */; };
+		7B07C02C1FF2AB2500D7B3D6 /* EncryptionHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B07C02B1FF2AB2500D7B3D6 /* EncryptionHelper.swift */; };
+		7B07C0301FF2ABEE00D7B3D6 /* ProgressUpdatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B07C02F1FF2ABEE00D7B3D6 /* ProgressUpdatable.swift */; };
+		7B07C0321FF2B46D00D7B3D6 /* EncrytionDownloadHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B07C0311FF2B46D00D7B3D6 /* EncrytionDownloadHelper.swift */; };
+		7B07C0371FF3B40A00D7B3D6 /* DecryptionCallback.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B07C0361FF3B40A00D7B3D6 /* DecryptionCallback.m */; };
+		7B230AE61E7953DC00A49562 /* BrokerMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B230AE51E7953DB00A49562 /* BrokerMessage.swift */; };
+		7B2E8C3F1F43410400C29947 /* RealmConversation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B2E8C3E1F43410400C29947 /* RealmConversation.swift */; };
+		7B2E8C411F44871300C29947 /* MessageType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B2E8C401F44871300C29947 /* MessageType.swift */; };
+		7B3266FB1FE1910E00B288DC /* SwiftFlow.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B3266F91FE1910E00B288DC /* SwiftFlow.m */; };
+		7B3B5AAC1ECB56BD00DE8256 /* SignalProto.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B0AB3371E6867FE00F978B5 /* SignalProto.m */; };
+		7B3B5AB21ECB639100DE8256 /* LocalIdentityData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B3B5AB11ECB639100DE8256 /* LocalIdentityData.swift */; };
+		7B3B5AB61ECB69A700DE8256 /* RealmDbHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B3B5AB51ECB69A700DE8256 /* RealmDbHelper.swift */; };
+		7B3B5AB81ECC59E600DE8256 /* RemoteIdentityData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B3B5AB71ECC59E600DE8256 /* RemoteIdentityData.swift */; };
+		7B3B5ABA1ECC5A1F00DE8256 /* RegistrationIdData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B3B5AB91ECC5A1F00DE8256 /* RegistrationIdData.swift */; };
+		7B3B5ABC1ECC8B9A00DE8256 /* LocalSignedPreKeyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B3B5ABB1ECC8B9A00DE8256 /* LocalSignedPreKeyData.swift */; };
+		7B3B5ABE1ECC959000DE8256 /* NextOTPKIdData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B3B5ABD1ECC959000DE8256 /* NextOTPKIdData.swift */; };
+		7B3B5AC01ECC964300DE8256 /* PreKeyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B3B5ABF1ECC964300DE8256 /* PreKeyData.swift */; };
+		7B3B5AC21ECCA69700DE8256 /* SessionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B3B5AC11ECCA69700DE8256 /* SessionData.swift */; };
+		7B3B5AC41ECDF61300DE8256 /* DefaultsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B3B5AC31ECDF61300DE8256 /* DefaultsHelper.swift */; };
+		7B3B5AC61ECF4F9200DE8256 /* IncomingMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B3B5AC51ECF4F9200DE8256 /* IncomingMessage.swift */; };
+		7B3CF3621F4B497A00F7E062 /* OutgoingImageChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B3CF3601F4B497A00F7E062 /* OutgoingImageChatCell.swift */; };
+		7B3CF3631F4B497A00F7E062 /* OutgoingImageChatCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B3CF3611F4B497A00F7E062 /* OutgoingImageChatCell.xib */; };
+		7B3CF3651F4DC6EF00F7E062 /* UIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B3CF3641F4DC6EF00F7E062 /* UIHelper.swift */; };
+		7B3CF3671F541D9900F7E062 /* ChatDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B3CF3661F541D9900F7E062 /* ChatDataSource.swift */; };
+		7B3CF3691F542E8500F7E062 /* ChatSectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B3CF3681F542E8500F7E062 /* ChatSectionHeader.swift */; };
+		7B3CF36B1F542E9F00F7E062 /* ChatSectionHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B3CF36A1F542E9F00F7E062 /* ChatSectionHeader.xib */; };
+		7B3FB9BA1F39A74700469DCD /* icons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B3FB9B91F39A74700469DCD /* icons.xcassets */; };
+		7B3FB9BC1F3B6B1C00469DCD /* UserInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B3FB9BB1F3B6B1B00469DCD /* UserInfoView.xib */; };
+		7B43E1771E71A9EB0064E945 /* MQTTMissitoClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B43E1761E71A9EB0064E945 /* MQTTMissitoClient.swift */; };
+		7B52DFC31F30904900B0E3C0 /* sf-ui-display-light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7B52DFBF1F30904900B0E3C0 /* sf-ui-display-light.otf */; };
+		7B52DFC41F30904900B0E3C0 /* sf-ui-display-regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7B52DFC01F30904900B0E3C0 /* sf-ui-display-regular.otf */; };
+		7B52DFC51F30904900B0E3C0 /* sf-ui-text-italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7B52DFC11F30904900B0E3C0 /* sf-ui-text-italic.otf */; };
+		7B52DFC61F30904900B0E3C0 /* vagrundschriftdot-regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7B52DFC21F30904900B0E3C0 /* vagrundschriftdot-regular.otf */; };
+		7B66EBAA1F3B708700313BFD /* ava_sample.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 7B66EBA91F3B708700313BFD /* ava_sample.jpeg */; };
+		7B66EBAC1F3B797C00313BFD /* UserInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B66EBAB1F3B797C00313BFD /* UserInfoView.swift */; };
+		7B66EBAE1F3CB30B00313BFD /* avatar_placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B66EBAD1F3CB30B00313BFD /* avatar_placeholder.png */; };
+		7B6B4E231F45F08B00F485F5 /* MissitoHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6B4E221F45F08B00F485F5 /* MissitoHelper.swift */; };
+		7B786E191F30C5DA0038C5D7 /* 163-papua-new-guinea.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B786E181F30C5DA0038C5D7 /* 163-papua-new-guinea.png */; };
+		7B7E6D9B207F60F300C80B0E /* DownloadService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7E6D9A207F60F300C80B0E /* DownloadService.swift */; };
+		7B7E6D9E207F6FCD00C80B0E /* CompositeProgressRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7E6D9D207F6FCD00C80B0E /* CompositeProgressRepository.swift */; };
+		7B7E6DA02081209D00C80B0E /* NameInputController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7E6D9F2081209D00C80B0E /* NameInputController.swift */; };
+		7B857F571EB77B16003C6AA8 /* APIRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B857F4F1EB77B16003C6AA8 /* APIRequests.swift */; };
+		7B857F581EB77B16003C6AA8 /* IdentityData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B857F521EB77B16003C6AA8 /* IdentityData.swift */; };
+		7B857F591EB77B16003C6AA8 /* NewSessionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B857F531EB77B16003C6AA8 /* NewSessionData.swift */; };
+		7B857F5A1EB77B16003C6AA8 /* OTPKeyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B857F541EB77B16003C6AA8 /* OTPKeyData.swift */; };
+		7B857F5B1EB77B16003C6AA8 /* OTPKeysData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B857F551EB77B16003C6AA8 /* OTPKeysData.swift */; };
+		7B857F5C1EB77B16003C6AA8 /* SignedPreKeyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B857F561EB77B16003C6AA8 /* SignedPreKeyData.swift */; };
+		7B857F5F1EB77BDF003C6AA8 /* OTPReqResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B857F5E1EB77BDF003C6AA8 /* OTPReqResponse.swift */; };
+		7B857F611EB77BF2003C6AA8 /* OTPCheckResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B857F601EB77BF2003C6AA8 /* OTPCheckResponse.swift */; };
+		7B857F631EB8E150003C6AA8 /* KeyChainHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B857F621EB8E150003C6AA8 /* KeyChainHelper.swift */; };
+		7B9710181FEC1AA200C79667 /* BaseControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9710171FEC1AA200C79667 /* BaseControl.swift */; };
+		7BADAAC81F4AEFE60085A122 /* BaseChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BADAAC71F4AEFE60085A122 /* BaseChatCell.swift */; };
+		7BADAACB1F4AF04E0085A122 /* IncomingTextChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BADAAC91F4AF04E0085A122 /* IncomingTextChatCell.swift */; };
+		7BADAACC1F4AF04E0085A122 /* IncomingTextChatCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7BADAACA1F4AF04E0085A122 /* IncomingTextChatCell.xib */; };
+		7BADAAD01F4B27840085A122 /* IncomingImageChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BADAACE1F4B27840085A122 /* IncomingImageChatCell.swift */; };
+		7BADAAD11F4B27840085A122 /* IncomingImageChatCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7BADAACF1F4B27840085A122 /* IncomingImageChatCell.xib */; };
+		7BADAAD31F4B27AD0085A122 /* IncomingChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BADAAD21F4B27AD0085A122 /* IncomingChatCell.swift */; };
+		7BADAAD71F4B2F620085A122 /* BaseChatMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BADAAD61F4B2F620085A122 /* BaseChatMessage.swift */; };
+		7BADAAD91F4B30E10085A122 /* ChatMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BADAAD81F4B30E10085A122 /* ChatMessage.swift */; };
+		7BADAADB1F4B310C0085A122 /* TypingChatMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BADAADA1F4B310C0085A122 /* TypingChatMessage.swift */; };
+		7BADAADD1F4B313B0085A122 /* OutgoingChatMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BADAADC1F4B313B0085A122 /* OutgoingChatMessage.swift */; };
+		7BADAADF1F4B31640085A122 /* IncomingChatMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BADAADE1F4B31640085A122 /* IncomingChatMessage.swift */; };
+		7BADAAE11F4B3E3F0085A122 /* OutgoingChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BADAAE01F4B3E3F0085A122 /* OutgoingChatCell.swift */; };
+		7BADAAE41F4B3E720085A122 /* OutgoingTextChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BADAAE21F4B3E720085A122 /* OutgoingTextChatCell.swift */; };
+		7BADAAE51F4B3E720085A122 /* OutgoingTextChatCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7BADAAE31F4B3E720085A122 /* OutgoingTextChatCell.xib */; };
+		7BC9B99B1ED5D8F9000D9E35 /* ContactsUpdateMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC9B99A1ED5D8F9000D9E35 /* ContactsUpdateMessage.swift */; };
+		7BCE09401ED82B7E000B93C1 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BCE093F1ED82B7E000B93C1 /* Constants.swift */; };
+		7BCE09421EDD71FC000B93C1 /* ContactsBlockStatusUpdateMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BCE09411EDD71FC000B93C1 /* ContactsBlockStatusUpdateMessage.swift */; };
+		7BCE09441EE016D9000B93C1 /* ContactsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BCE09431EE016D9000B93C1 /* ContactsManager.swift */; };
+		7BCE09461EE016FF000B93C1 /* ContactsStatusManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BCE09451EE016FF000B93C1 /* ContactsStatusManager.swift */; };
+		7BCE09481EE06CEA000B93C1 /* MessageStatusRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BCE09471EE06CEA000B93C1 /* MessageStatusRequest.swift */; };
+		7BCE094E1EE17913000B93C1 /* MissitoRealmDbHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BCE094D1EE17913000B93C1 /* MissitoRealmDbHelper.swift */; };
+		7BCE09501EE179D0000B93C1 /* MissitoMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BCE094F1EE179D0000B93C1 /* MissitoMessage.swift */; };
+		7BE9D34C1F0AA2C4000A01A1 /* AttachmentSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE9D34B1F0AA2C4000A01A1 /* AttachmentSpec.swift */; };
+		7BEA32222077B21A00672248 /* MessageSenderService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BEA32212077B21A00672248 /* MessageSenderService.swift */; };
+		7BEA32242077DD5C00672248 /* LoadProgressRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BEA32232077DD5C00672248 /* LoadProgressRepository.swift */; };
+		7BEF4A101F7013E8001F1597 /* ContactInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BEF4A0F1F7013E8001F1597 /* ContactInfoViewController.swift */; };
+		AA509B50204584B600FB0E34 /* InvitableProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA509B4F204584B600FB0E34 /* InvitableProtocol.swift */; };
+		AA716384204A92CE00B3CCB5 /* InviteView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA716383204A92CE00B3CCB5 /* InviteView.xib */; };
+		AA7163AA204AFD3D00B3CCB5 /* InviteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7163A9204AFD3D00B3CCB5 /* InviteView.swift */; };
+		BF01CB4C1F50390200763CF1 /* MissitoAudioPlayerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF01CB4B1F50390200763CF1 /* MissitoAudioPlayerManager.swift */; };
+		BF05FFB11ECDC31900966C3D /* MessageIdData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF05FFB01ECDC31900966C3D /* MessageIdData.swift */; };
+		BF0DE5831FDEC222006220B1 /* CustomControllerTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0DE5821FDEC222006220B1 /* CustomControllerTitleView.swift */; };
+		BF0E7B0C1EDD5D66006E265B /* ContactStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0E7B0B1EDD5D66006E265B /* ContactStatus.swift */; };
+		BF0E7B121EDD93C8006E265B /* ContactsStatusUpdate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0E7B111EDD93C8006E265B /* ContactsStatusUpdate.swift */; };
+		BF0E7B141EDDA0A6006E265B /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0E7B131EDDA0A6006E265B /* Array.swift */; };
+		BF0EB6DB1F345D84002E13CE /* MissitoVerificationCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0EB6DA1F345D84002E13CE /* MissitoVerificationCodeView.swift */; };
+		BF0F1C591F753C96009EF27C /* IncomingVideoChatCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF0F1C581F753C96009EF27C /* IncomingVideoChatCell.xib */; };
+		BF0F1C5B1F753CAF009EF27C /* IncomingVideoChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0F1C5A1F753CAF009EF27C /* IncomingVideoChatCell.swift */; };
+		BF15E6901F273B800085B4E3 /* PhoneBookNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF15E68F1F273B800085B4E3 /* PhoneBookNumber.swift */; };
+		BF15E6921F2782120085B4E3 /* ContactsDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF15E6911F2782120085B4E3 /* ContactsDataManager.swift */; };
+		BF15E6941F2891450085B4E3 /* InviteContactsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF15E6931F2891450085B4E3 /* InviteContactsTableViewController.swift */; };
+		BF1982AC1EE6B599005C8371 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1982AB1EE6B599005C8371 /* Reachability.swift */; };
+		BF1982AE1EE6F78C005C8371 /* LocalMessageStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1982AD1EE6F78C005C8371 /* LocalMessageStatus.swift */; };
+		BF1C9A171EF29D2400E84D0C /* CloudTokenUpdate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1C9A161EF29D2400E84D0C /* CloudTokenUpdate.swift */; };
+		BF1C9A191EF2CDD400E84D0C /* PrivacySettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1C9A181EF2CDD400E84D0C /* PrivacySettingsTableViewController.swift */; };
+		BF1EAC771F0FBF0200DAA5BB /* FullScreenImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1EAC761F0FBF0200DAA5BB /* FullScreenImageViewController.swift */; };
+		BF203C301F20E0F7003302F0 /* DeleteAudioContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF203C2F1F20E0F7003302F0 /* DeleteAudioContainerView.swift */; };
+		BF203C331F20E185003302F0 /* EqualizerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF203C321F20E185003302F0 /* EqualizerView.swift */; };
+		BF203C371F20F9BD003302F0 /* MissitoAudioRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF203C361F20F9BD003302F0 /* MissitoAudioRecorder.swift */; };
+		BF26BC0E1EF9043000634DCC /* OfflineContact.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF26BC0D1EF9043000634DCC /* OfflineContact.swift */; };
+		BF27254C1F29C99700119F0E /* InviteRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF27254B1F29C99700119F0E /* InviteRequest.swift */; };
+		BF27254E1F29CF8400119F0E /* ProgressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF27254D1F29CF8400119F0E /* ProgressViewController.swift */; };
+		BF2725501F29D0CB00119F0E /* ProgressDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF27254F1F29D0CB00119F0E /* ProgressDelegate.swift */; };
+		BF2725521F29D6B600119F0E /* SendInvitesProgressHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2725511F29D6B600119F0E /* SendInvitesProgressHandler.swift */; };
+		BF31064A1F739B2C00672BAE /* MyProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3106491F739B2C00672BAE /* MyProfileTableViewController.swift */; };
+		BF31064C1F73B8A600672BAE /* SeparatorlessTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF31064B1F73B8A600672BAE /* SeparatorlessTableViewCell.swift */; };
+		BF31064F1F750E8200672BAE /* OutgoingVideoChatCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF31064E1F750E8200672BAE /* OutgoingVideoChatCell.xib */; };
+		BF3106511F750FD000672BAE /* OutgoingVideoChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3106501F750FD000672BAE /* OutgoingVideoChatCell.swift */; };
+		BF3124D11EC9A0ED00A20D68 /* OutgoingMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3124D01EC9A0ED00A20D68 /* OutgoingMessage.swift */; };
+		BF321B161F029AFF00051461 /* MissitoAttachment.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF321B151F029AFF00051461 /* MissitoAttachment.swift */; };
+		BF321B181F029CA400051461 /* RealmAttachment.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF321B171F029CA400051461 /* RealmAttachment.swift */; };
+		BF321B1A1F039EF600051461 /* MissitoImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF321B191F039EF600051461 /* MissitoImage.swift */; };
+		BF321B1C1F03A10300051461 /* RealmImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF321B1B1F03A10300051461 /* RealmImage.swift */; };
+		BF33021B1F2222F9005963C3 /* TypingMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF33021A1F2222F9005963C3 /* TypingMessageCell.swift */; };
+		BF33021D1F222FEB005963C3 /* Debouncer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF33021C1F222FEB005963C3 /* Debouncer.swift */; };
+		BF3374601F13A8F30047863A /* RealmAttachmentContact.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF33745F1F13A8F30047863A /* RealmAttachmentContact.swift */; };
+		BF3374621F13A8FD0047863A /* RealmLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3374611F13A8FD0047863A /* RealmLocation.swift */; };
+		BF3374641F13A9090047863A /* RealmAudio.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3374631F13A9090047863A /* RealmAudio.swift */; };
+		BF3374661F13A9120047863A /* RealmVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3374651F13A9120047863A /* RealmVideo.swift */; };
+		BF3374681F13ACC40047863A /* RealmString.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3374671F13ACC40047863A /* RealmString.swift */; };
+		BF33746A1F13B1410047863A /* MissitoContact.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3374691F13B1410047863A /* MissitoContact.swift */; };
+		BF33746C1F13B14B0047863A /* MissitoLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF33746B1F13B14B0047863A /* MissitoLocation.swift */; };
+		BF33746E1F13B1530047863A /* MissitoAudio.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF33746D1F13B1530047863A /* MissitoAudio.swift */; };
+		BF3374701F13B15B0047863A /* MissitoVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF33746F1F13B15B0047863A /* MissitoVideo.swift */; };
+		BF37DF4A1EE536FE00FBFF22 /* RealmMissitoContact.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3124D41EC9CBAF00A20D68 /* RealmMissitoContact.swift */; };
+		BF3C44E81ED5A0A300D90D42 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3C44E71ED5A0A300D90D42 /* Contact.swift */; };
+		BF3F91F21F0E1DBB007E94EF /* UpdatedMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3F91F11F0E1DBB007E94EF /* UpdatedMessages.swift */; };
+		BF43AAA91EDC32D5004D484F /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF43AAA81EDC32D5004D484F /* Section.swift */; };
+		BF47FC901F31B5BE00B65D75 /* Flags.plist in Resources */ = {isa = PBXBuildFile; fileRef = BF47FC8F1F31B5BE00B65D75 /* Flags.plist */; };
+		BF47FC921F32070100B65D75 /* MissitoSearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF47FC911F32070100B65D75 /* MissitoSearchBar.swift */; };
+		BF47FC941F32112700B65D75 /* CustomHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF47FC931F32112700B65D75 /* CustomHeaderCell.swift */; };
+		BF490C791F4D96F300A2572F /* OutgoingContactChatCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF490C781F4D96F300A2572F /* OutgoingContactChatCell.xib */; };
+		BF490C7B1F4D96FA00A2572F /* OutgoingContactChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF490C7A1F4D96FA00A2572F /* OutgoingContactChatCell.swift */; };
+		BF490C7D1F4D970A00A2572F /* IncomingContactChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF490C7C1F4D970A00A2572F /* IncomingContactChatCell.swift */; };
+		BF490C7F1F4D971000A2572F /* IncomingContactChatCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF490C7E1F4D971000A2572F /* IncomingContactChatCell.xib */; };
+		BF6116981ED7573F005102D4 /* RealmMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6116971ED7573F005102D4 /* RealmMessage.swift */; };
+		BF61A9361F0A70B70079857B /* MessageBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF61A9351F0A70B70079857B /* MessageBody.swift */; };
+		BF6636211EF3C18B000C81B5 /* PrivacyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6636201EF3C18B000C81B5 /* PrivacyTableViewCell.swift */; };
+		BF71E7B41F55908700F2AD9D /* BubbleUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF71E7B31F55908700F2AD9D /* BubbleUIView.swift */; };
+		BF71E7B61F55926200F2AD9D /* BubbleUIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF71E7B51F55926200F2AD9D /* BubbleUIImageView.swift */; };
+		BF8953581F54123C00144379 /* MissitoContactAvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8953571F54123C00144379 /* MissitoContactAvatarView.swift */; };
+		BF91C45C1F4D61B600BF7B6B /* IncomingMapChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF91C45B1F4D61B600BF7B6B /* IncomingMapChatCell.swift */; };
+		BF91C45E1F4D620C00BF7B6B /* IncomingMapChatCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF91C45D1F4D620C00BF7B6B /* IncomingMapChatCell.xib */; };
+		BF939E381EF6EA430045E917 /* NetworkSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF939E371EF6EA430045E917 /* NetworkSettingsViewController.swift */; };
+		BFB7E5721F16785B0049CF76 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB7E5711F16785B0049CF76 /* MapViewController.swift */; };
+		BFD8BDDF1F4C27B800C613CA /* MissitoAudioMessageSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD8BDDE1F4C27B800C613CA /* MissitoAudioMessageSlider.swift */; };
+		BFE3C25D1F4C1F0500825517 /* OutgoingMapChatCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFE3C25C1F4C1F0500825517 /* OutgoingMapChatCell.xib */; };
+		BFE3C25F1F4C21C500825517 /* OutgoingMapChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE3C25E1F4C21C500825517 /* OutgoingMapChatCell.swift */; };
+		BFE3C2611F4C229700825517 /* OutgoingAudioChatCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFE3C2601F4C229700825517 /* OutgoingAudioChatCell.xib */; };
+		BFEEE8971EE1DC6D00BA4C01 /* MessageStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEEE8961EE1DC6D00BA4C01 /* MessageStatus.swift */; };
+		BFF92EBF1FD806630025C15D /* ChatPresenting.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF92EBE1FD806630025C15D /* ChatPresenting.swift */; };
+		BFFCF57C1F4ECE3800A6B65E /* IncomingAudioChatCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFFCF57B1F4ECE3800A6B65E /* IncomingAudioChatCell.xib */; };
+		BFFCF57E1F4ECF1400A6B65E /* IncomingAudioChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFFCF57D1F4ECF1400A6B65E /* IncomingAudioChatCell.swift */; };
+		BFFCF5821F4ED3D100A6B65E /* AudioPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFFCF5811F4ED3D100A6B65E /* AudioPlayerView.swift */; };
+		BFFCF5841F4ED47600A6B65E /* OutgoingAudioChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFFCF5831F4ED47600A6B65E /* OutgoingAudioChatCell.swift */; };
+		BFFDFB741EFACD9B004A8835 /* ProfileSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFFDFB731EFACD9B004A8835 /* ProfileSettings.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		56BD4EF41CF3046A00AA4A60 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 56BD4ED51CF3046A00AA4A60 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 56BD4EDC1CF3046A00AA4A60;
+			remoteInfo = Missito;
+		};
+		56BD4EFF1CF3046A00AA4A60 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 56BD4ED51CF3046A00AA4A60 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 56BD4EDC1CF3046A00AA4A60;
+			remoteInfo = Missito;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		23381716552A41F07107F55E /* Pods-Missito.debug dev.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Missito.debug dev.xcconfig"; path = "Pods/Target Support Files/Pods-Missito/Pods-Missito.debug dev.xcconfig"; sourceTree = "<group>"; };
+		56BD4EDD1CF3046A00AA4A60 /* Missito.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Missito.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		56BD4EE01CF3046A00AA4A60 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		56BD4EE91CF3046A00AA4A60 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		56BD4EEE1CF3046A00AA4A60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		56BD4EF31CF3046A00AA4A60 /* MissitoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MissitoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		56BD4EF71CF3046A00AA4A60 /* MissitoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissitoTests.swift; sourceTree = "<group>"; };
+		56BD4EF91CF3046A00AA4A60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		56BD4EFE1CF3046A00AA4A60 /* MissitoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MissitoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		56BD4F021CF3046A00AA4A60 /* MissitoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissitoUITests.swift; sourceTree = "<group>"; };
+		56BD4F041CF3046A00AA4A60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		56BD4F101CF3061300AA4A60 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		5E22F9811D831E0F009176B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Auth.storyboard; sourceTree = "<group>"; };
+		5E22F9841D831E1C009176B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Chats.storyboard; sourceTree = "<group>"; };
+		5E22F9871D831E20009176B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Contacts.storyboard; sourceTree = "<group>"; };
+		5E22F98A1D831E24009176B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/Launch Screen.storyboard"; sourceTree = "<group>"; };
+		5E22F98D1D831E29009176B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5E22F9901D831E2D009176B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Settings.storyboard; sourceTree = "<group>"; };
+		5E291FDB1D440DA5000116DD /* HipsterScriptPro.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = HipsterScriptPro.otf; sourceTree = "<group>"; };
+		5E2947D01D391071003BC793 /* BrokerConnection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrokerConnection.swift; sourceTree = "<group>"; };
+		5E4B216D1CF5968500CED4E4 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		5E4B217A1CF59A1F00CED4E4 /* CountryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountryCell.swift; sourceTree = "<group>"; };
+		5E4B6AB11D423C0A00468E22 /* Customizable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Customizable.swift; sourceTree = "<group>"; };
+		5E4B6AB21D423C0A00468E22 /* UINavigationController+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Extension.swift"; sourceTree = "<group>"; };
+		5E4B6AB31D423C0A00468E22 /* UITabBarController+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITabBarController+Extension.swift"; sourceTree = "<group>"; };
+		5E4B6ABB1D424D6400468E22 /* CustomTitleViewLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTitleViewLabel.swift; sourceTree = "<group>"; };
+		5E6285D91D7F0B31007C7933 /* RecordingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordingController.swift; sourceTree = "<group>"; };
+		5E732B4B1D3933B500B724AE /* AuthService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		5E82C0FE1DACEA7000BC4A9B /* Missito.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Missito.entitlements; sourceTree = "<group>"; };
+		5E8F0A7A1DF9A9D000F61F94 /* CoreServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreServices.swift; sourceTree = "<group>"; };
+		5EA197B61D6F38CC000FFC75 /* Mountains.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Mountains.jpg; sourceTree = "<group>"; };
+		5EAEEE6D1D44158500E98310 /* CustomTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
+		5EB2383D1D5DF1D3001EB3C2 /* MissitoContactCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MissitoContactCell.swift; sourceTree = "<group>"; };
+		5EB2383F1D5DFA18001EB3C2 /* AllContactCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllContactCell.swift; sourceTree = "<group>"; };
+		5EC58F751D40DD01007F4686 /* ContactsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsController.swift; sourceTree = "<group>"; };
+		5EC58F831D410336007F4686 /* ChatsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatsController.swift; sourceTree = "<group>"; };
+		5EC8A5BB1D422E2E0096B1A0 /* FontAwesome.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.otf; sourceTree = "<group>"; };
+		5ECBC1A61D631183008C28D7 /* ChatsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatsCell.swift; sourceTree = "<group>"; };
+		5ECBC1A81D6311AB008C28D7 /* NotificationBubble.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationBubble.swift; sourceTree = "<group>"; };
+		5ECBC1BD1D63368B008C28D7 /* ChatController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatController.swift; sourceTree = "<group>"; };
+		5ECFBF111CF5A665003B9F47 /* PhoneNumberCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhoneNumberCell.swift; sourceTree = "<group>"; };
+		5ECFBF131CF5D309003B9F47 /* DiallingCodes.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = DiallingCodes.plist; sourceTree = "<group>"; };
+		5ED21B991D1413BB0095FCE4 /* MissitoRealmDB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MissitoRealmDB.swift; path = repository/MissitoRealmDB.swift; sourceTree = "<group>"; };
+		5EDCA81E1CF6FD64001DFEC3 /* CountryPickerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountryPickerController.swift; sourceTree = "<group>"; };
+		5EDCA81F1CF6FD64001DFEC3 /* RegisterController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterController.swift; sourceTree = "<group>"; };
+		5EDCA8231CF708AB001DFEC3 /* VerificationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerificationController.swift; sourceTree = "<group>"; };
+		5EDF9E171D81B280004DD547 /* Bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Bridge.h; sourceTree = "<group>"; };
+		5EEB942C1D6C430200395843 /* MessageTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageTextField.swift; sourceTree = "<group>"; };
+		5EEB942E1D6C72F000395843 /* MessageToolbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageToolbar.swift; sourceTree = "<group>"; };
+		61CB3B3D3613A75CE29A02D5 /* Pods_Missito.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Missito.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		786A7F919B8592732C787244 /* Pods-Missito.debug beta.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Missito.debug beta.xcconfig"; path = "Pods/Target Support Files/Pods-Missito/Pods-Missito.debug beta.xcconfig"; sourceTree = "<group>"; };
+		7B07C02B1FF2AB2500D7B3D6 /* EncryptionHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EncryptionHelper.swift; sourceTree = "<group>"; };
+		7B07C02F1FF2ABEE00D7B3D6 /* ProgressUpdatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressUpdatable.swift; sourceTree = "<group>"; };
+		7B07C0311FF2B46D00D7B3D6 /* EncrytionDownloadHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncrytionDownloadHelper.swift; sourceTree = "<group>"; };
+		7B07C0351FF3B40A00D7B3D6 /* DecryptionCallback.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DecryptionCallback.h; sourceTree = "<group>"; };
+		7B07C0361FF3B40A00D7B3D6 /* DecryptionCallback.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DecryptionCallback.m; sourceTree = "<group>"; };
+		7B0AB3351E68295600F978B5 /* SignalBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SignalBridge.h; sourceTree = "<group>"; };
+		7B0AB3361E6867FE00F978B5 /* SignalProto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignalProto.h; sourceTree = "<group>"; };
+		7B0AB3371E6867FE00F978B5 /* SignalProto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignalProto.m; sourceTree = "<group>"; };
+		7B0AB3391E686C0200F978B5 /* signal_test.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = signal_test.c; sourceTree = "<group>"; };
+		7B0AB33A1E686C0200F978B5 /* signal_test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = signal_test.h; sourceTree = "<group>"; };
+		7B230AE51E7953DB00A49562 /* BrokerMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrokerMessage.swift; sourceTree = "<group>"; };
+		7B2E8C3E1F43410400C29947 /* RealmConversation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmConversation.swift; sourceTree = "<group>"; };
+		7B2E8C401F44871300C29947 /* MessageType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageType.swift; sourceTree = "<group>"; };
+		7B3266F91FE1910E00B288DC /* SwiftFlow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwiftFlow.m; sourceTree = "<group>"; };
+		7B3266FA1FE1910E00B288DC /* SwiftFlow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwiftFlow.h; sourceTree = "<group>"; };
+		7B3B5AAD1ECB5AC300DE8256 /* SignalStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SignalStore.h; path = store/SignalStore.h; sourceTree = "<group>"; };
+		7B3B5AAE1ECB5AC300DE8256 /* SignalStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SignalStore.m; path = store/SignalStore.m; sourceTree = "<group>"; };
+		7B3B5AB11ECB639100DE8256 /* LocalIdentityData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LocalIdentityData.swift; path = store/model/LocalIdentityData.swift; sourceTree = "<group>"; };
+		7B3B5AB51ECB69A700DE8256 /* RealmDbHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmDbHelper.swift; sourceTree = "<group>"; };
+		7B3B5AB71ECC59E600DE8256 /* RemoteIdentityData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RemoteIdentityData.swift; path = store/model/RemoteIdentityData.swift; sourceTree = "<group>"; };
+		7B3B5AB91ECC5A1F00DE8256 /* RegistrationIdData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RegistrationIdData.swift; path = store/model/RegistrationIdData.swift; sourceTree = "<group>"; };
+		7B3B5ABB1ECC8B9A00DE8256 /* LocalSignedPreKeyData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LocalSignedPreKeyData.swift; path = store/model/LocalSignedPreKeyData.swift; sourceTree = "<group>"; };
+		7B3B5ABD1ECC959000DE8256 /* NextOTPKIdData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NextOTPKIdData.swift; path = store/model/NextOTPKIdData.swift; sourceTree = "<group>"; };
+		7B3B5ABF1ECC964300DE8256 /* PreKeyData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PreKeyData.swift; path = store/model/PreKeyData.swift; sourceTree = "<group>"; };
+		7B3B5AC11ECCA69700DE8256 /* SessionData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SessionData.swift; path = store/model/SessionData.swift; sourceTree = "<group>"; };
+		7B3B5AC31ECDF61300DE8256 /* DefaultsHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultsHelper.swift; sourceTree = "<group>"; };
+		7B3B5AC51ECF4F9200DE8256 /* IncomingMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IncomingMessage.swift; sourceTree = "<group>"; };
+		7B3CF3601F4B497A00F7E062 /* OutgoingImageChatCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OutgoingImageChatCell.swift; path = "chat-cells/OutgoingImageChatCell.swift"; sourceTree = "<group>"; };
+		7B3CF3611F4B497A00F7E062 /* OutgoingImageChatCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = OutgoingImageChatCell.xib; path = "chat-cells/OutgoingImageChatCell.xib"; sourceTree = "<group>"; };
+		7B3CF3641F4DC6EF00F7E062 /* UIHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIHelper.swift; sourceTree = "<group>"; };
+		7B3CF3661F541D9900F7E062 /* ChatDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatDataSource.swift; sourceTree = "<group>"; };
+		7B3CF3681F542E8500F7E062 /* ChatSectionHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChatSectionHeader.swift; path = "chat-cells/ChatSectionHeader.swift"; sourceTree = "<group>"; };
+		7B3CF36A1F542E9F00F7E062 /* ChatSectionHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ChatSectionHeader.xib; path = "chat-cells/ChatSectionHeader.xib"; sourceTree = "<group>"; };
+		7B3FB9B91F39A74700469DCD /* icons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = icons.xcassets; sourceTree = "<group>"; };
+		7B3FB9BB1F3B6B1B00469DCD /* UserInfoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserInfoView.xib; sourceTree = "<group>"; };
+		7B43E1761E71A9EB0064E945 /* MQTTMissitoClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MQTTMissitoClient.swift; sourceTree = "<group>"; };
+		7B52DFBF1F30904900B0E3C0 /* sf-ui-display-light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "sf-ui-display-light.otf"; sourceTree = "<group>"; };
+		7B52DFC01F30904900B0E3C0 /* sf-ui-display-regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "sf-ui-display-regular.otf"; sourceTree = "<group>"; };
+		7B52DFC11F30904900B0E3C0 /* sf-ui-text-italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "sf-ui-text-italic.otf"; sourceTree = "<group>"; };
+		7B52DFC21F30904900B0E3C0 /* vagrundschriftdot-regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "vagrundschriftdot-regular.otf"; sourceTree = "<group>"; };
+		7B66EBA91F3B708700313BFD /* ava_sample.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ava_sample.jpeg; sourceTree = "<group>"; };
+		7B66EBAB1F3B797C00313BFD /* UserInfoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfoView.swift; sourceTree = "<group>"; };
+		7B66EBAD1F3CB30B00313BFD /* avatar_placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = avatar_placeholder.png; sourceTree = "<group>"; };
+		7B6B4E221F45F08B00F485F5 /* MissitoHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MissitoHelper.swift; sourceTree = "<group>"; };
+		7B786E181F30C5DA0038C5D7 /* 163-papua-new-guinea.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "163-papua-new-guinea.png"; sourceTree = "<group>"; };
+		7B7E6D9A207F60F300C80B0E /* DownloadService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadService.swift; sourceTree = "<group>"; };
+		7B7E6D9D207F6FCD00C80B0E /* CompositeProgressRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositeProgressRepository.swift; sourceTree = "<group>"; };
+		7B7E6D9F2081209D00C80B0E /* NameInputController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameInputController.swift; sourceTree = "<group>"; };
+		7B857F4F1EB77B16003C6AA8 /* APIRequests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIRequests.swift; sourceTree = "<group>"; };
+		7B857F521EB77B16003C6AA8 /* IdentityData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IdentityData.swift; sourceTree = "<group>"; };
+		7B857F531EB77B16003C6AA8 /* NewSessionData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewSessionData.swift; sourceTree = "<group>"; };
+		7B857F541EB77B16003C6AA8 /* OTPKeyData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OTPKeyData.swift; sourceTree = "<group>"; };
+		7B857F551EB77B16003C6AA8 /* OTPKeysData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OTPKeysData.swift; sourceTree = "<group>"; };
+		7B857F561EB77B16003C6AA8 /* SignedPreKeyData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignedPreKeyData.swift; sourceTree = "<group>"; };
+		7B857F5E1EB77BDF003C6AA8 /* OTPReqResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OTPReqResponse.swift; path = auth/OTPReqResponse.swift; sourceTree = "<group>"; };
+		7B857F601EB77BF2003C6AA8 /* OTPCheckResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OTPCheckResponse.swift; path = auth/OTPCheckResponse.swift; sourceTree = "<group>"; };
+		7B857F621EB8E150003C6AA8 /* KeyChainHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyChainHelper.swift; sourceTree = "<group>"; };
+		7B9710171FEC1AA200C79667 /* BaseControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseControl.swift; sourceTree = "<group>"; };
+		7BADAAC71F4AEFE60085A122 /* BaseChatCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseChatCell.swift; path = "chat-cells/BaseChatCell.swift"; sourceTree = "<group>"; };
+		7BADAAC91F4AF04E0085A122 /* IncomingTextChatCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IncomingTextChatCell.swift; path = "chat-cells/IncomingTextChatCell.swift"; sourceTree = "<group>"; };
+		7BADAACA1F4AF04E0085A122 /* IncomingTextChatCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = IncomingTextChatCell.xib; path = "chat-cells/IncomingTextChatCell.xib"; sourceTree = "<group>"; };
+		7BADAACE1F4B27840085A122 /* IncomingImageChatCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IncomingImageChatCell.swift; path = "chat-cells/IncomingImageChatCell.swift"; sourceTree = "<group>"; };
+		7BADAACF1F4B27840085A122 /* IncomingImageChatCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = IncomingImageChatCell.xib; path = "chat-cells/IncomingImageChatCell.xib"; sourceTree = "<group>"; };
+		7BADAAD21F4B27AD0085A122 /* IncomingChatCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IncomingChatCell.swift; path = "chat-cells/IncomingChatCell.swift"; sourceTree = "<group>"; };
+		7BADAAD61F4B2F620085A122 /* BaseChatMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseChatMessage.swift; path = ui/chat/BaseChatMessage.swift; sourceTree = "<group>"; };
+		7BADAAD81F4B30E10085A122 /* ChatMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChatMessage.swift; path = ui/chat/ChatMessage.swift; sourceTree = "<group>"; };
+		7BADAADA1F4B310C0085A122 /* TypingChatMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TypingChatMessage.swift; path = ui/chat/TypingChatMessage.swift; sourceTree = "<group>"; };
+		7BADAADC1F4B313B0085A122 /* OutgoingChatMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OutgoingChatMessage.swift; path = ui/chat/OutgoingChatMessage.swift; sourceTree = "<group>"; };
+		7BADAADE1F4B31640085A122 /* IncomingChatMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IncomingChatMessage.swift; path = ui/chat/IncomingChatMessage.swift; sourceTree = "<group>"; };
+		7BADAAE01F4B3E3F0085A122 /* OutgoingChatCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OutgoingChatCell.swift; path = "chat-cells/OutgoingChatCell.swift"; sourceTree = "<group>"; };
+		7BADAAE21F4B3E720085A122 /* OutgoingTextChatCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OutgoingTextChatCell.swift; path = "chat-cells/OutgoingTextChatCell.swift"; sourceTree = "<group>"; };
+		7BADAAE31F4B3E720085A122 /* OutgoingTextChatCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = OutgoingTextChatCell.xib; path = "chat-cells/OutgoingTextChatCell.xib"; sourceTree = "<group>"; };
+		7BC9B99A1ED5D8F9000D9E35 /* ContactsUpdateMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsUpdateMessage.swift; sourceTree = "<group>"; };
+		7BCE093F1ED82B7E000B93C1 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = common/Constants.swift; sourceTree = "<group>"; };
+		7BCE09411EDD71FC000B93C1 /* ContactsBlockStatusUpdateMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsBlockStatusUpdateMessage.swift; sourceTree = "<group>"; };
+		7BCE09431EE016D9000B93C1 /* ContactsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsManager.swift; sourceTree = "<group>"; };
+		7BCE09451EE016FF000B93C1 /* ContactsStatusManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsStatusManager.swift; sourceTree = "<group>"; };
+		7BCE09471EE06CEA000B93C1 /* MessageStatusRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageStatusRequest.swift; sourceTree = "<group>"; };
+		7BCE094D1EE17913000B93C1 /* MissitoRealmDbHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MissitoRealmDbHelper.swift; path = realmdb/MissitoRealmDbHelper.swift; sourceTree = "<group>"; };
+		7BCE094F1EE179D0000B93C1 /* MissitoMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MissitoMessage.swift; sourceTree = "<group>"; };
+		7BE9D34B1F0AA2C4000A01A1 /* AttachmentSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttachmentSpec.swift; sourceTree = "<group>"; };
+		7BEA32212077B21A00672248 /* MessageSenderService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageSenderService.swift; sourceTree = "<group>"; };
+		7BEA32232077DD5C00672248 /* LoadProgressRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadProgressRepository.swift; sourceTree = "<group>"; };
+		7BEF4A0F1F7013E8001F1597 /* ContactInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactInfoViewController.swift; sourceTree = "<group>"; };
+		8AEB6F0D3FBA8B9B0227D65C /* Pods-Missito.release prod.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Missito.release prod.xcconfig"; path = "Pods/Target Support Files/Pods-Missito/Pods-Missito.release prod.xcconfig"; sourceTree = "<group>"; };
+		8CFE51FB6F3D0B86223BF504 /* Pods-Missito.debug prod.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Missito.debug prod.xcconfig"; path = "Pods/Target Support Files/Pods-Missito/Pods-Missito.debug prod.xcconfig"; sourceTree = "<group>"; };
+		9C2EBFB9E2BC4C423CC9B394 /* Pods-Missito.release beta.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Missito.release beta.xcconfig"; path = "Pods/Target Support Files/Pods-Missito/Pods-Missito.release beta.xcconfig"; sourceTree = "<group>"; };
+		AA509B4F204584B600FB0E34 /* InvitableProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvitableProtocol.swift; sourceTree = "<group>"; };
+		AA716383204A92CE00B3CCB5 /* InviteView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InviteView.xib; sourceTree = "<group>"; };
+		AA7163A9204AFD3D00B3CCB5 /* InviteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InviteView.swift; sourceTree = "<group>"; };
+		BF01CB4B1F50390200763CF1 /* MissitoAudioPlayerManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MissitoAudioPlayerManager.swift; sourceTree = "<group>"; };
+		BF05FFB01ECDC31900966C3D /* MessageIdData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageIdData.swift; sourceTree = "<group>"; };
+		BF0DE5821FDEC222006220B1 /* CustomControllerTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomControllerTitleView.swift; sourceTree = "<group>"; };
+		BF0E7B0B1EDD5D66006E265B /* ContactStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactStatus.swift; sourceTree = "<group>"; };
+		BF0E7B111EDD93C8006E265B /* ContactsStatusUpdate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsStatusUpdate.swift; sourceTree = "<group>"; };
+		BF0E7B131EDDA0A6006E265B /* Array.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
+		BF0EB6DA1F345D84002E13CE /* MissitoVerificationCodeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MissitoVerificationCodeView.swift; sourceTree = "<group>"; };
+		BF0F1C581F753C96009EF27C /* IncomingVideoChatCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IncomingVideoChatCell.xib; sourceTree = "<group>"; };
+		BF0F1C5A1F753CAF009EF27C /* IncomingVideoChatCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IncomingVideoChatCell.swift; sourceTree = "<group>"; };
+		BF15E68F1F273B800085B4E3 /* PhoneBookNumber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhoneBookNumber.swift; sourceTree = "<group>"; };
+		BF15E6911F2782120085B4E3 /* ContactsDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsDataManager.swift; sourceTree = "<group>"; };
+		BF15E6931F2891450085B4E3 /* InviteContactsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InviteContactsTableViewController.swift; sourceTree = "<group>"; };
+		BF1982AB1EE6B599005C8371 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		BF1982AD1EE6F78C005C8371 /* LocalMessageStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalMessageStatus.swift; sourceTree = "<group>"; };
+		BF1C9A161EF29D2400E84D0C /* CloudTokenUpdate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CloudTokenUpdate.swift; sourceTree = "<group>"; };
+		BF1C9A181EF2CDD400E84D0C /* PrivacySettingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrivacySettingsTableViewController.swift; sourceTree = "<group>"; };
+		BF1EAC761F0FBF0200DAA5BB /* FullScreenImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FullScreenImageViewController.swift; sourceTree = "<group>"; };
+		BF203C2F1F20E0F7003302F0 /* DeleteAudioContainerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeleteAudioContainerView.swift; sourceTree = "<group>"; };
+		BF203C321F20E185003302F0 /* EqualizerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EqualizerView.swift; sourceTree = "<group>"; };
+		BF203C361F20F9BD003302F0 /* MissitoAudioRecorder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MissitoAudioRecorder.swift; sourceTree = "<group>"; };
+		BF26BC0D1EF9043000634DCC /* OfflineContact.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OfflineContact.swift; sourceTree = "<group>"; };
+		BF27254B1F29C99700119F0E /* InviteRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InviteRequest.swift; sourceTree = "<group>"; };
+		BF27254D1F29CF8400119F0E /* ProgressViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressViewController.swift; sourceTree = "<group>"; };
+		BF27254F1F29D0CB00119F0E /* ProgressDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressDelegate.swift; sourceTree = "<group>"; };
+		BF2725511F29D6B600119F0E /* SendInvitesProgressHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendInvitesProgressHandler.swift; sourceTree = "<group>"; };
+		BF3106491F739B2C00672BAE /* MyProfileTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyProfileTableViewController.swift; sourceTree = "<group>"; };
+		BF31064B1F73B8A600672BAE /* SeparatorlessTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeparatorlessTableViewCell.swift; sourceTree = "<group>"; };
+		BF31064E1F750E8200672BAE /* OutgoingVideoChatCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OutgoingVideoChatCell.xib; sourceTree = "<group>"; };
+		BF3106501F750FD000672BAE /* OutgoingVideoChatCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OutgoingVideoChatCell.swift; sourceTree = "<group>"; };
+		BF3124D01EC9A0ED00A20D68 /* OutgoingMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OutgoingMessage.swift; sourceTree = "<group>"; };
+		BF3124D41EC9CBAF00A20D68 /* RealmMissitoContact.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RealmMissitoContact.swift; path = models/RealmMissitoContact.swift; sourceTree = "<group>"; };
+		BF321B151F029AFF00051461 /* MissitoAttachment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MissitoAttachment.swift; sourceTree = "<group>"; };
+		BF321B171F029CA400051461 /* RealmAttachment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmAttachment.swift; sourceTree = "<group>"; };
+		BF321B191F039EF600051461 /* MissitoImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MissitoImage.swift; sourceTree = "<group>"; };
+		BF321B1B1F03A10300051461 /* RealmImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmImage.swift; sourceTree = "<group>"; };
+		BF33021A1F2222F9005963C3 /* TypingMessageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TypingMessageCell.swift; sourceTree = "<group>"; };
+		BF33021C1F222FEB005963C3 /* Debouncer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Debouncer.swift; sourceTree = "<group>"; };
+		BF33745F1F13A8F30047863A /* RealmAttachmentContact.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmAttachmentContact.swift; sourceTree = "<group>"; };
+		BF3374611F13A8FD0047863A /* RealmLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmLocation.swift; sourceTree = "<group>"; };
+		BF3374631F13A9090047863A /* RealmAudio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmAudio.swift; sourceTree = "<group>"; };
+		BF3374651F13A9120047863A /* RealmVideo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmVideo.swift; sourceTree = "<group>"; };
+		BF3374671F13ACC40047863A /* RealmString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmString.swift; sourceTree = "<group>"; };
+		BF3374691F13B1410047863A /* MissitoContact.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MissitoContact.swift; sourceTree = "<group>"; };
+		BF33746B1F13B14B0047863A /* MissitoLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MissitoLocation.swift; sourceTree = "<group>"; };
+		BF33746D1F13B1530047863A /* MissitoAudio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MissitoAudio.swift; sourceTree = "<group>"; };
+		BF33746F1F13B15B0047863A /* MissitoVideo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MissitoVideo.swift; sourceTree = "<group>"; };
+		BF3C44E71ED5A0A300D90D42 /* Contact.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
+		BF3F91F11F0E1DBB007E94EF /* UpdatedMessages.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdatedMessages.swift; sourceTree = "<group>"; };
+		BF43AAA81EDC32D5004D484F /* Section.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
+		BF47FC8F1F31B5BE00B65D75 /* Flags.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Flags.plist; sourceTree = "<group>"; };
+		BF47FC911F32070100B65D75 /* MissitoSearchBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MissitoSearchBar.swift; sourceTree = "<group>"; };
+		BF47FC931F32112700B65D75 /* CustomHeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomHeaderCell.swift; sourceTree = "<group>"; };
+		BF490C781F4D96F300A2572F /* OutgoingContactChatCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OutgoingContactChatCell.xib; sourceTree = "<group>"; };
+		BF490C7A1F4D96FA00A2572F /* OutgoingContactChatCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OutgoingContactChatCell.swift; sourceTree = "<group>"; };
+		BF490C7C1F4D970A00A2572F /* IncomingContactChatCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IncomingContactChatCell.swift; sourceTree = "<group>"; };
+		BF490C7E1F4D971000A2572F /* IncomingContactChatCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IncomingContactChatCell.xib; sourceTree = "<group>"; };
+		BF6116971ED7573F005102D4 /* RealmMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmMessage.swift; sourceTree = "<group>"; };
+		BF61A9351F0A70B70079857B /* MessageBody.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageBody.swift; sourceTree = "<group>"; };
+		BF6636201EF3C18B000C81B5 /* PrivacyTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrivacyTableViewCell.swift; sourceTree = "<group>"; };
+		BF71E7B31F55908700F2AD9D /* BubbleUIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BubbleUIView.swift; sourceTree = "<group>"; };
+		BF71E7B51F55926200F2AD9D /* BubbleUIImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BubbleUIImageView.swift; sourceTree = "<group>"; };
+		BF8953571F54123C00144379 /* MissitoContactAvatarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MissitoContactAvatarView.swift; sourceTree = "<group>"; };
+		BF91C45B1F4D61B600BF7B6B /* IncomingMapChatCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IncomingMapChatCell.swift; sourceTree = "<group>"; };
+		BF91C45D1F4D620C00BF7B6B /* IncomingMapChatCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IncomingMapChatCell.xib; sourceTree = "<group>"; };
+		BF939E371EF6EA430045E917 /* NetworkSettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkSettingsViewController.swift; sourceTree = "<group>"; };
+		BFB7E5711F16785B0049CF76 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		BFD8BDDE1F4C27B800C613CA /* MissitoAudioMessageSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MissitoAudioMessageSlider.swift; sourceTree = "<group>"; };
+		BFE3C25C1F4C1F0500825517 /* OutgoingMapChatCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OutgoingMapChatCell.xib; sourceTree = "<group>"; };
+		BFE3C25E1F4C21C500825517 /* OutgoingMapChatCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OutgoingMapChatCell.swift; sourceTree = "<group>"; };
+		BFE3C2601F4C229700825517 /* OutgoingAudioChatCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OutgoingAudioChatCell.xib; sourceTree = "<group>"; };
+		BFEEE8961EE1DC6D00BA4C01 /* MessageStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageStatus.swift; sourceTree = "<group>"; };
+		BFF92EBE1FD806630025C15D /* ChatPresenting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatPresenting.swift; sourceTree = "<group>"; };
+		BFFCF57B1F4ECE3800A6B65E /* IncomingAudioChatCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IncomingAudioChatCell.xib; sourceTree = "<group>"; };
+		BFFCF57D1F4ECF1400A6B65E /* IncomingAudioChatCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IncomingAudioChatCell.swift; sourceTree = "<group>"; };
+		BFFCF5811F4ED3D100A6B65E /* AudioPlayerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioPlayerView.swift; sourceTree = "<group>"; };
+		BFFCF5831F4ED47600A6B65E /* OutgoingAudioChatCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OutgoingAudioChatCell.swift; sourceTree = "<group>"; };
+		BFFDFB731EFACD9B004A8835 /* ProfileSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileSettings.swift; sourceTree = "<group>"; };
+		E6E75D819960E7DDE9656B90 /* Pods_MissitoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MissitoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F51E6B2EAEB86BA77CAC6A65 /* Pods-Missito.release dev.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Missito.release dev.xcconfig"; path = "Pods/Target Support Files/Pods-Missito/Pods-Missito.release dev.xcconfig"; sourceTree = "<group>"; };
+		F810CC4EEF8397E21962A5FC /* Pods-Missito.appstore.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Missito.appstore.xcconfig"; path = "Pods/Target Support Files/Pods-Missito/Pods-Missito.appstore.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		56BD4EDA1CF3046A00AA4A60 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A10412FAD8FB058BBF82C91 /* Pods_Missito.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56BD4EF01CF3046A00AA4A60 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56BD4EFB1CF3046A00AA4A60 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		56BD4ED41CF3046A00AA4A60 = {
+			isa = PBXGroup;
+			children = (
+				56BD4F101CF3061300AA4A60 /* Podfile */,
+				56BD4EDF1CF3046A00AA4A60 /* Missito */,
+				56BD4EF61CF3046A00AA4A60 /* MissitoTests */,
+				56BD4F011CF3046A00AA4A60 /* MissitoUITests */,
+				56BD4EDE1CF3046A00AA4A60 /* Products */,
+				C3A6AA27BEEA9655B5F26291 /* Pods */,
+				C623B19379B85DEEA69F799B /* Frameworks */,
+				7B07C02A1FF2AA5F00D7B3D6 /* Recovered References */,
+			);
+			sourceTree = "<group>";
+		};
+		56BD4EDE1CF3046A00AA4A60 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				56BD4EDD1CF3046A00AA4A60 /* Missito.app */,
+				56BD4EF31CF3046A00AA4A60 /* MissitoTests.xctest */,
+				56BD4EFE1CF3046A00AA4A60 /* MissitoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		56BD4EDF1CF3046A00AA4A60 /* Missito */ = {
+			isa = PBXGroup;
+			children = (
+				7B3266F51FE190EB00B288DC /* SwiftFlow */,
+				BF47FC8F1F31B5BE00B65D75 /* Flags.plist */,
+				BF6116941ED753C9005102D4 /* realmdb */,
+				7BCE093E1ED82B69000B93C1 /* common */,
+				7B857F4E1EB77B16003C6AA8 /* net */,
+				7BA673661EB7731300792B85 /* res */,
+				5E82C0FE1DACEA7000BC4A9B /* Missito.entitlements */,
+				5E732B461D3933B500B724AE /* services */,
+				5EACD9491DDF2924002C95C3 /* signal */,
+				5E2947CC1D391071003BC793 /* broker */,
+				5E1F0E051D11F15E0081B485 /* models */,
+				5ECFBF131CF5D309003B9F47 /* DiallingCodes.plist */,
+				5E4B21791CF59A1F00CED4E4 /* views */,
+				5E4B21721CF599A400CED4E4 /* controllers */,
+				5E4B216B1CF5968500CED4E4 /* util */,
+				5ECA43621CF3489300191486 /* Storyboards */,
+				56BD4EE01CF3046A00AA4A60 /* AppDelegate.swift */,
+				56BD4EE91CF3046A00AA4A60 /* Assets.xcassets */,
+				56BD4EEE1CF3046A00AA4A60 /* Info.plist */,
+				5EDF9E171D81B280004DD547 /* Bridge.h */,
+			);
+			path = Missito;
+			sourceTree = "<group>";
+		};
+		56BD4EF61CF3046A00AA4A60 /* MissitoTests */ = {
+			isa = PBXGroup;
+			children = (
+				56BD4EF71CF3046A00AA4A60 /* MissitoTests.swift */,
+				56BD4EF91CF3046A00AA4A60 /* Info.plist */,
+			);
+			path = MissitoTests;
+			sourceTree = "<group>";
+		};
+		56BD4F011CF3046A00AA4A60 /* MissitoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				56BD4F021CF3046A00AA4A60 /* MissitoUITests.swift */,
+				56BD4F041CF3046A00AA4A60 /* Info.plist */,
+			);
+			path = MissitoUITests;
+			sourceTree = "<group>";
+		};
+		5E1F0E051D11F15E0081B485 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				7BADAAD41F4B2ED70085A122 /* ui */,
+				7BCE094F1EE179D0000B93C1 /* MissitoMessage.swift */,
+				BF0E7B0B1EDD5D66006E265B /* ContactStatus.swift */,
+				BF3C44E71ED5A0A300D90D42 /* Contact.swift */,
+				BF43AAA81EDC32D5004D484F /* Section.swift */,
+				BFEEE8961EE1DC6D00BA4C01 /* MessageStatus.swift */,
+				BF1982AD1EE6F78C005C8371 /* LocalMessageStatus.swift */,
+				BF26BC0D1EF9043000634DCC /* OfflineContact.swift */,
+				7B2E8C401F44871300C29947 /* MessageType.swift */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		5E2947CC1D391071003BC793 /* broker */ = {
+			isa = PBXGroup;
+			children = (
+				5E2947CD1D391071003BC793 /* client */,
+				5E2947CF1D391071003BC793 /* connection */,
+				5E2947D31D391071003BC793 /* model */,
+			);
+			path = broker;
+			sourceTree = "<group>";
+		};
+		5E2947CD1D391071003BC793 /* client */ = {
+			isa = PBXGroup;
+			children = (
+				7B43E1761E71A9EB0064E945 /* MQTTMissitoClient.swift */,
+			);
+			path = client;
+			sourceTree = "<group>";
+		};
+		5E2947CF1D391071003BC793 /* connection */ = {
+			isa = PBXGroup;
+			children = (
+				5E2947D01D391071003BC793 /* BrokerConnection.swift */,
+			);
+			path = connection;
+			sourceTree = "<group>";
+		};
+		5E2947D31D391071003BC793 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				7B230AE51E7953DB00A49562 /* BrokerMessage.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		5E4B216B1CF5968500CED4E4 /* util */ = {
+			isa = PBXGroup;
+			children = (
+				7B07C02B1FF2AB2500D7B3D6 /* EncryptionHelper.swift */,
+				BF203C361F20F9BD003302F0 /* MissitoAudioRecorder.swift */,
+				5E4B216D1CF5968500CED4E4 /* Utils.swift */,
+				7B857F621EB8E150003C6AA8 /* KeyChainHelper.swift */,
+				7B3B5AC31ECDF61300DE8256 /* DefaultsHelper.swift */,
+				BF0E7B131EDDA0A6006E265B /* Array.swift */,
+				BF1982AB1EE6B599005C8371 /* Reachability.swift */,
+				BF33021C1F222FEB005963C3 /* Debouncer.swift */,
+				BF27254F1F29D0CB00119F0E /* ProgressDelegate.swift */,
+				7B6B4E221F45F08B00F485F5 /* MissitoHelper.swift */,
+				7B3CF3641F4DC6EF00F7E062 /* UIHelper.swift */,
+				BF01CB4B1F50390200763CF1 /* MissitoAudioPlayerManager.swift */,
+				7B07C0311FF2B46D00D7B3D6 /* EncrytionDownloadHelper.swift */,
+			);
+			path = util;
+			sourceTree = "<group>";
+		};
+		5E4B21721CF599A400CED4E4 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5E4B6AB01D423C0A00468E22 /* cutomizations */,
+				5EC58F821D410336007F4686 /* chats */,
+				5EC58F7B1D40DEBB007F4686 /* settings */,
+				5EC58F741D40DD01007F4686 /* contacts */,
+				5EDCA81C1CF6FD64001DFEC3 /* auth */,
+				BF27254D1F29CF8400119F0E /* ProgressViewController.swift */,
+				7BEF4A0F1F7013E8001F1597 /* ContactInfoViewController.swift */,
+				BFF92EBE1FD806630025C15D /* ChatPresenting.swift */,
+				7B7E6D9F2081209D00C80B0E /* NameInputController.swift */,
+			);
+			path = controllers;
+			sourceTree = "<group>";
+		};
+		5E4B21791CF59A1F00CED4E4 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				7B3FB9B61F38B46E00469DCD /* common */,
+				BF0EB6D91F345D4B002E13CE /* auth */,
+				BF203C311F20E16F003302F0 /* chat */,
+				5ECBC1AE1D633362008C28D7 /* chat-cells */,
+				5ECFBF111CF5A665003B9F47 /* PhoneNumberCell.swift */,
+				5EB2383D1D5DF1D3001EB3C2 /* MissitoContactCell.swift */,
+				5EB2383F1D5DFA18001EB3C2 /* AllContactCell.swift */,
+				5ECBC1A61D631183008C28D7 /* ChatsCell.swift */,
+				5ECBC1A81D6311AB008C28D7 /* NotificationBubble.swift */,
+				BF0DE5821FDEC222006220B1 /* CustomControllerTitleView.swift */,
+				5EEB942C1D6C430200395843 /* MessageTextField.swift */,
+				5EEB942E1D6C72F000395843 /* MessageToolbar.swift */,
+				BF47FC911F32070100B65D75 /* MissitoSearchBar.swift */,
+				BF47FC931F32112700B65D75 /* CustomHeaderCell.swift */,
+				7B3FB9BB1F3B6B1B00469DCD /* UserInfoView.xib */,
+				7B66EBAB1F3B797C00313BFD /* UserInfoView.swift */,
+				BF8953571F54123C00144379 /* MissitoContactAvatarView.swift */,
+				7B9710171FEC1AA200C79667 /* BaseControl.swift */,
+				BF31064B1F73B8A600672BAE /* SeparatorlessTableViewCell.swift */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		5E4B6AB01D423C0A00468E22 /* cutomizations */ = {
+			isa = PBXGroup;
+			children = (
+				5E4B6AB11D423C0A00468E22 /* Customizable.swift */,
+				5E4B6AB21D423C0A00468E22 /* UINavigationController+Extension.swift */,
+				5E4B6AB31D423C0A00468E22 /* UITabBarController+Extension.swift */,
+				5EAEEE6D1D44158500E98310 /* CustomTabBarController.swift */,
+				5E4B6ABB1D424D6400468E22 /* CustomTitleViewLabel.swift */,
+			);
+			path = cutomizations;
+			sourceTree = "<group>";
+		};
+		5E732B461D3933B500B724AE /* services */ = {
+			isa = PBXGroup;
+			children = (
+				7B7E6D9C207F6F3F00C80B0E /* util */,
+				7BCE09431EE016D9000B93C1 /* ContactsManager.swift */,
+				5E732B4B1D3933B500B724AE /* AuthService.swift */,
+				5E8F0A7A1DF9A9D000F61F94 /* CoreServices.swift */,
+				7BCE09451EE016FF000B93C1 /* ContactsStatusManager.swift */,
+				BF15E6911F2782120085B4E3 /* ContactsDataManager.swift */,
+				BF2725511F29D6B600119F0E /* SendInvitesProgressHandler.swift */,
+				7BEA32212077B21A00672248 /* MessageSenderService.swift */,
+				7B7E6D9A207F60F300C80B0E /* DownloadService.swift */,
+			);
+			path = services;
+			sourceTree = "<group>";
+		};
+		5E73B6871D42274400D1D9F8 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				7B52DFBF1F30904900B0E3C0 /* sf-ui-display-light.otf */,
+				7B52DFC01F30904900B0E3C0 /* sf-ui-display-regular.otf */,
+				7B52DFC11F30904900B0E3C0 /* sf-ui-text-italic.otf */,
+				7B52DFC21F30904900B0E3C0 /* vagrundschriftdot-regular.otf */,
+				5E291FDB1D440DA5000116DD /* HipsterScriptPro.otf */,
+				5EC8A5BB1D422E2E0096B1A0 /* FontAwesome.otf */,
+			);
+			path = fonts;
+			sourceTree = "<group>";
+		};
+		5EACD9491DDF2924002C95C3 /* signal */ = {
+			isa = PBXGroup;
+			children = (
+				7B3B5AA81ECB539E00DE8256 /* store */,
+				7B0AB3351E68295600F978B5 /* SignalBridge.h */,
+				7B0AB3361E6867FE00F978B5 /* SignalProto.h */,
+				7B0AB3371E6867FE00F978B5 /* SignalProto.m */,
+				7B0AB3391E686C0200F978B5 /* signal_test.c */,
+				7B0AB33A1E686C0200F978B5 /* signal_test.h */,
+				7B07C0351FF3B40A00D7B3D6 /* DecryptionCallback.h */,
+				7B07C0361FF3B40A00D7B3D6 /* DecryptionCallback.m */,
+			);
+			path = signal;
+			sourceTree = "<group>";
+		};
+		5EC58F741D40DD01007F4686 /* contacts */ = {
+			isa = PBXGroup;
+			children = (
+				5EC58F751D40DD01007F4686 /* ContactsController.swift */,
+				BF15E6931F2891450085B4E3 /* InviteContactsTableViewController.swift */,
+			);
+			path = contacts;
+			sourceTree = "<group>";
+		};
+		5EC58F7B1D40DEBB007F4686 /* settings */ = {
+			isa = PBXGroup;
+			children = (
+				BF31064D1F73D60700672BAE /* cells */,
+				BF1C9A181EF2CDD400E84D0C /* PrivacySettingsTableViewController.swift */,
+				BF939E371EF6EA430045E917 /* NetworkSettingsViewController.swift */,
+				BF3106491F739B2C00672BAE /* MyProfileTableViewController.swift */,
+			);
+			path = settings;
+			sourceTree = "<group>";
+		};
+		5EC58F821D410336007F4686 /* chats */ = {
+			isa = PBXGroup;
+			children = (
+				BF1EAC761F0FBF0200DAA5BB /* FullScreenImageViewController.swift */,
+				5EC58F831D410336007F4686 /* ChatsController.swift */,
+				5ECBC1BD1D63368B008C28D7 /* ChatController.swift */,
+				5E6285D91D7F0B31007C7933 /* RecordingController.swift */,
+				BFB7E5711F16785B0049CF76 /* MapViewController.swift */,
+				7B3CF3661F541D9900F7E062 /* ChatDataSource.swift */,
+			);
+			path = chats;
+			sourceTree = "<group>";
+		};
+		5ECA43621CF3489300191486 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				5E22F9821D831E0F009176B5 /* Auth.storyboard */,
+				5E22F9851D831E1C009176B5 /* Chats.storyboard */,
+				5E22F9881D831E20009176B5 /* Contacts.storyboard */,
+				5E22F98B1D831E24009176B5 /* Launch Screen.storyboard */,
+				5E22F98E1D831E29009176B5 /* Main.storyboard */,
+				5E22F9911D831E2D009176B5 /* Settings.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		5ECBC1AE1D633362008C28D7 /* chat-cells */ = {
+			isa = PBXGroup;
+			children = (
+				7BADAACD1F4AF47B0085A122 /* outgoing */,
+				7BADAAC41F4AEF510085A122 /* incoming */,
+				7BADAAC71F4AEFE60085A122 /* BaseChatCell.swift */,
+				BF71E7B31F55908700F2AD9D /* BubbleUIView.swift */,
+				7B07C02F1FF2ABEE00D7B3D6 /* ProgressUpdatable.swift */,
+				BF71E7B51F55926200F2AD9D /* BubbleUIImageView.swift */,
+				BF33021A1F2222F9005963C3 /* TypingMessageCell.swift */,
+				7B3CF3681F542E8500F7E062 /* ChatSectionHeader.swift */,
+				7B3CF36A1F542E9F00F7E062 /* ChatSectionHeader.xib */,
+			);
+			name = "chat-cells";
+			sourceTree = "<group>";
+		};
+		5EDCA81C1CF6FD64001DFEC3 /* auth */ = {
+			isa = PBXGroup;
+			children = (
+				5EDCA81E1CF6FD64001DFEC3 /* CountryPickerController.swift */,
+				5EDCA81F1CF6FD64001DFEC3 /* RegisterController.swift */,
+				5EDCA8231CF708AB001DFEC3 /* VerificationController.swift */,
+			);
+			path = auth;
+			sourceTree = "<group>";
+		};
+		5EEB94341D6CB65F00395843 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				7B66EBAD1F3CB30B00313BFD /* avatar_placeholder.png */,
+				7B66EBA91F3B708700313BFD /* ava_sample.jpeg */,
+				7B786E181F30C5DA0038C5D7 /* 163-papua-new-guinea.png */,
+				5EA197B61D6F38CC000FFC75 /* Mountains.jpg */,
+				7B3FB9B91F39A74700469DCD /* icons.xcassets */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
+		7B07C02A1FF2AA5F00D7B3D6 /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
+		7B3266F51FE190EB00B288DC /* SwiftFlow */ = {
+			isa = PBXGroup;
+			children = (
+				7B3266FA1FE1910E00B288DC /* SwiftFlow.h */,
+				7B3266F91FE1910E00B288DC /* SwiftFlow.m */,
+			);
+			path = SwiftFlow;
+			sourceTree = "<group>";
+		};
+		7B3B5AA81ECB539E00DE8256 /* store */ = {
+			isa = PBXGroup;
+			children = (
+				7B3B5AB01ECB5AE300DE8256 /* model */,
+				7B3B5AAD1ECB5AC300DE8256 /* SignalStore.h */,
+				7B3B5AAE1ECB5AC300DE8256 /* SignalStore.m */,
+				7B3B5AB51ECB69A700DE8256 /* RealmDbHelper.swift */,
+			);
+			name = store;
+			sourceTree = "<group>";
+		};
+		7B3B5AB01ECB5AE300DE8256 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				7B3B5AB91ECC5A1F00DE8256 /* RegistrationIdData.swift */,
+				7B3B5AB11ECB639100DE8256 /* LocalIdentityData.swift */,
+				7B3B5AB71ECC59E600DE8256 /* RemoteIdentityData.swift */,
+				7B3B5ABB1ECC8B9A00DE8256 /* LocalSignedPreKeyData.swift */,
+				7B3B5ABD1ECC959000DE8256 /* NextOTPKIdData.swift */,
+				7B3B5ABF1ECC964300DE8256 /* PreKeyData.swift */,
+				7B3B5AC11ECCA69700DE8256 /* SessionData.swift */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+		7B3FB9B61F38B46E00469DCD /* common */ = {
+			isa = PBXGroup;
+			children = (
+				AA509B4F204584B600FB0E34 /* InvitableProtocol.swift */,
+				AA716383204A92CE00B3CCB5 /* InviteView.xib */,
+				AA7163A9204AFD3D00B3CCB5 /* InviteView.swift */,
+			);
+			name = common;
+			sourceTree = "<group>";
+		};
+		7B7E6D9C207F6F3F00C80B0E /* util */ = {
+			isa = PBXGroup;
+			children = (
+				7BEA32232077DD5C00672248 /* LoadProgressRepository.swift */,
+				7B7E6D9D207F6FCD00C80B0E /* CompositeProgressRepository.swift */,
+			);
+			path = util;
+			sourceTree = "<group>";
+		};
+		7B857F4E1EB77B16003C6AA8 /* net */ = {
+			isa = PBXGroup;
+			children = (
+				7B857F4F1EB77B16003C6AA8 /* APIRequests.swift */,
+				7B857F501EB77B16003C6AA8 /* model */,
+			);
+			path = net;
+			sourceTree = "<group>";
+		};
+		7B857F501EB77B16003C6AA8 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				7BE9D34A1F0AA29E000A01A1 /* attach */,
+				BF1C9A151EF29D0500E84D0C /* cloud */,
+				BFFDFB721EFACD8B004A8835 /* profile */,
+				7BC9B9991ED5D45F000D9E35 /* contacts */,
+				BF05FFAF1ECDC2FE00966C3D /* chat */,
+				7B857F5D1EB77B89003C6AA8 /* auth */,
+				7B857F511EB77B16003C6AA8 /* signal */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		7B857F511EB77B16003C6AA8 /* signal */ = {
+			isa = PBXGroup;
+			children = (
+				7B857F521EB77B16003C6AA8 /* IdentityData.swift */,
+				7B857F531EB77B16003C6AA8 /* NewSessionData.swift */,
+				7B857F541EB77B16003C6AA8 /* OTPKeyData.swift */,
+				7B857F551EB77B16003C6AA8 /* OTPKeysData.swift */,
+				7B857F561EB77B16003C6AA8 /* SignedPreKeyData.swift */,
+			);
+			path = signal;
+			sourceTree = "<group>";
+		};
+		7B857F5D1EB77B89003C6AA8 /* auth */ = {
+			isa = PBXGroup;
+			children = (
+				7B857F5E1EB77BDF003C6AA8 /* OTPReqResponse.swift */,
+				7B857F601EB77BF2003C6AA8 /* OTPCheckResponse.swift */,
+			);
+			name = auth;
+			sourceTree = "<group>";
+		};
+		7BA673661EB7731300792B85 /* res */ = {
+			isa = PBXGroup;
+			children = (
+				5E73B6871D42274400D1D9F8 /* fonts */,
+				5EEB94341D6CB65F00395843 /* images */,
+			);
+			name = res;
+			sourceTree = "<group>";
+		};
+		7BADAAC41F4AEF510085A122 /* incoming */ = {
+			isa = PBXGroup;
+			children = (
+				7BADAAC91F4AF04E0085A122 /* IncomingTextChatCell.swift */,
+				7BADAACA1F4AF04E0085A122 /* IncomingTextChatCell.xib */,
+				7BADAACE1F4B27840085A122 /* IncomingImageChatCell.swift */,
+				7BADAACF1F4B27840085A122 /* IncomingImageChatCell.xib */,
+				7BADAAD21F4B27AD0085A122 /* IncomingChatCell.swift */,
+				BFFCF57B1F4ECE3800A6B65E /* IncomingAudioChatCell.xib */,
+				BFFCF57D1F4ECF1400A6B65E /* IncomingAudioChatCell.swift */,
+				BF490C7C1F4D970A00A2572F /* IncomingContactChatCell.swift */,
+				BF490C7E1F4D971000A2572F /* IncomingContactChatCell.xib */,
+				BF91C45B1F4D61B600BF7B6B /* IncomingMapChatCell.swift */,
+				BF91C45D1F4D620C00BF7B6B /* IncomingMapChatCell.xib */,
+				BF0F1C581F753C96009EF27C /* IncomingVideoChatCell.xib */,
+				BF0F1C5A1F753CAF009EF27C /* IncomingVideoChatCell.swift */,
+			);
+			name = incoming;
+			sourceTree = "<group>";
+		};
+		7BADAACD1F4AF47B0085A122 /* outgoing */ = {
+			isa = PBXGroup;
+			children = (
+				7BADAAE01F4B3E3F0085A122 /* OutgoingChatCell.swift */,
+				7BADAAE21F4B3E720085A122 /* OutgoingTextChatCell.swift */,
+				7BADAAE31F4B3E720085A122 /* OutgoingTextChatCell.xib */,
+				7B3CF3601F4B497A00F7E062 /* OutgoingImageChatCell.swift */,
+				7B3CF3611F4B497A00F7E062 /* OutgoingImageChatCell.xib */,
+				BFE3C25C1F4C1F0500825517 /* OutgoingMapChatCell.xib */,
+				BFE3C25E1F4C21C500825517 /* OutgoingMapChatCell.swift */,
+				BFE3C2601F4C229700825517 /* OutgoingAudioChatCell.xib */,
+				BFFCF5831F4ED47600A6B65E /* OutgoingAudioChatCell.swift */,
+				BF490C781F4D96F300A2572F /* OutgoingContactChatCell.xib */,
+				BF490C7A1F4D96FA00A2572F /* OutgoingContactChatCell.swift */,
+				BF31064E1F750E8200672BAE /* OutgoingVideoChatCell.xib */,
+				BF3106501F750FD000672BAE /* OutgoingVideoChatCell.swift */,
+			);
+			name = outgoing;
+			sourceTree = "<group>";
+		};
+		7BADAAD41F4B2ED70085A122 /* ui */ = {
+			isa = PBXGroup;
+			children = (
+				7BADAAD51F4B2F0E0085A122 /* chat */,
+			);
+			name = ui;
+			sourceTree = "<group>";
+		};
+		7BADAAD51F4B2F0E0085A122 /* chat */ = {
+			isa = PBXGroup;
+			children = (
+				7BADAAD61F4B2F620085A122 /* BaseChatMessage.swift */,
+				7BADAAD81F4B30E10085A122 /* ChatMessage.swift */,
+				7BADAADA1F4B310C0085A122 /* TypingChatMessage.swift */,
+				7BADAADC1F4B313B0085A122 /* OutgoingChatMessage.swift */,
+				7BADAADE1F4B31640085A122 /* IncomingChatMessage.swift */,
+			);
+			name = chat;
+			sourceTree = "<group>";
+		};
+		7BC9B9991ED5D45F000D9E35 /* contacts */ = {
+			isa = PBXGroup;
+			children = (
+				7BC9B99A1ED5D8F9000D9E35 /* ContactsUpdateMessage.swift */,
+				7BCE09411EDD71FC000B93C1 /* ContactsBlockStatusUpdateMessage.swift */,
+				BF0E7B111EDD93C8006E265B /* ContactsStatusUpdate.swift */,
+				BF27254B1F29C99700119F0E /* InviteRequest.swift */,
+			);
+			name = contacts;
+			sourceTree = "<group>";
+		};
+		7BCE093E1ED82B69000B93C1 /* common */ = {
+			isa = PBXGroup;
+			children = (
+				7BCE093F1ED82B7E000B93C1 /* Constants.swift */,
+			);
+			name = common;
+			sourceTree = "<group>";
+		};
+		7BE9D34A1F0AA29E000A01A1 /* attach */ = {
+			isa = PBXGroup;
+			children = (
+				7BE9D34B1F0AA2C4000A01A1 /* AttachmentSpec.swift */,
+			);
+			name = attach;
+			sourceTree = "<group>";
+		};
+		BF05FFAF1ECDC2FE00966C3D /* chat */ = {
+			isa = PBXGroup;
+			children = (
+				BF321B151F029AFF00051461 /* MissitoAttachment.swift */,
+				BF3124D01EC9A0ED00A20D68 /* OutgoingMessage.swift */,
+				BF05FFB01ECDC31900966C3D /* MessageIdData.swift */,
+				7B3B5AC51ECF4F9200DE8256 /* IncomingMessage.swift */,
+				7BCE09471EE06CEA000B93C1 /* MessageStatusRequest.swift */,
+				BF321B191F039EF600051461 /* MissitoImage.swift */,
+				BF61A9351F0A70B70079857B /* MessageBody.swift */,
+				BF3374691F13B1410047863A /* MissitoContact.swift */,
+				BF33746B1F13B14B0047863A /* MissitoLocation.swift */,
+				BF33746D1F13B1530047863A /* MissitoAudio.swift */,
+				BF33746F1F13B15B0047863A /* MissitoVideo.swift */,
+				BF3F91F11F0E1DBB007E94EF /* UpdatedMessages.swift */,
+			);
+			name = chat;
+			sourceTree = "<group>";
+		};
+		BF0EB6D91F345D4B002E13CE /* auth */ = {
+			isa = PBXGroup;
+			children = (
+				5E4B217A1CF59A1F00CED4E4 /* CountryCell.swift */,
+				BF0EB6DA1F345D84002E13CE /* MissitoVerificationCodeView.swift */,
+			);
+			name = auth;
+			sourceTree = "<group>";
+		};
+		BF1C9A151EF29D0500E84D0C /* cloud */ = {
+			isa = PBXGroup;
+			children = (
+				BF1C9A161EF29D2400E84D0C /* CloudTokenUpdate.swift */,
+			);
+			name = cloud;
+			sourceTree = "<group>";
+		};
+		BF203C311F20E16F003302F0 /* chat */ = {
+			isa = PBXGroup;
+			children = (
+				BF203C2F1F20E0F7003302F0 /* DeleteAudioContainerView.swift */,
+				BF203C321F20E185003302F0 /* EqualizerView.swift */,
+				BFD8BDDE1F4C27B800C613CA /* MissitoAudioMessageSlider.swift */,
+				BFFCF5811F4ED3D100A6B65E /* AudioPlayerView.swift */,
+			);
+			name = chat;
+			sourceTree = "<group>";
+		};
+		BF31064D1F73D60700672BAE /* cells */ = {
+			isa = PBXGroup;
+			children = (
+				BF6636201EF3C18B000C81B5 /* PrivacyTableViewCell.swift */,
+			);
+			name = cells;
+			sourceTree = "<group>";
+		};
+		BF6116941ED753C9005102D4 /* realmdb */ = {
+			isa = PBXGroup;
+			children = (
+				BF6116961ED7572E005102D4 /* objects */,
+				5ED21B991D1413BB0095FCE4 /* MissitoRealmDB.swift */,
+				7BCE094D1EE17913000B93C1 /* MissitoRealmDbHelper.swift */,
+			);
+			name = realmdb;
+			sourceTree = "<group>";
+		};
+		BF6116961ED7572E005102D4 /* objects */ = {
+			isa = PBXGroup;
+			children = (
+				BF6116971ED7573F005102D4 /* RealmMessage.swift */,
+				BF321B171F029CA400051461 /* RealmAttachment.swift */,
+				BF321B1B1F03A10300051461 /* RealmImage.swift */,
+				BF33745F1F13A8F30047863A /* RealmAttachmentContact.swift */,
+				BF3374611F13A8FD0047863A /* RealmLocation.swift */,
+				BF3374631F13A9090047863A /* RealmAudio.swift */,
+				BF3374651F13A9120047863A /* RealmVideo.swift */,
+				BF3374671F13ACC40047863A /* RealmString.swift */,
+				BF3124D41EC9CBAF00A20D68 /* RealmMissitoContact.swift */,
+				BF15E68F1F273B800085B4E3 /* PhoneBookNumber.swift */,
+				7B2E8C3E1F43410400C29947 /* RealmConversation.swift */,
+			);
+			name = objects;
+			sourceTree = "<group>";
+		};
+		BFFDFB721EFACD8B004A8835 /* profile */ = {
+			isa = PBXGroup;
+			children = (
+				BFFDFB731EFACD9B004A8835 /* ProfileSettings.swift */,
+			);
+			name = profile;
+			sourceTree = "<group>";
+		};
+		C3A6AA27BEEA9655B5F26291 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8CFE51FB6F3D0B86223BF504 /* Pods-Missito.debug prod.xcconfig */,
+				786A7F919B8592732C787244 /* Pods-Missito.debug beta.xcconfig */,
+				23381716552A41F07107F55E /* Pods-Missito.debug dev.xcconfig */,
+				8AEB6F0D3FBA8B9B0227D65C /* Pods-Missito.release prod.xcconfig */,
+				9C2EBFB9E2BC4C423CC9B394 /* Pods-Missito.release beta.xcconfig */,
+				F51E6B2EAEB86BA77CAC6A65 /* Pods-Missito.release dev.xcconfig */,
+				F810CC4EEF8397E21962A5FC /* Pods-Missito.appstore.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C623B19379B85DEEA69F799B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				61CB3B3D3613A75CE29A02D5 /* Pods_Missito.framework */,
+				E6E75D819960E7DDE9656B90 /* Pods_MissitoTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		56BD4EDC1CF3046A00AA4A60 /* Missito */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 56BD4F071CF3046B00AA4A60 /* Build configuration list for PBXNativeTarget "Missito" */;
+			buildPhases = (
+				EA50CA9C3941ACA1BAB6437D /* [CP] Check Pods Manifest.lock */,
+				56BD4ED91CF3046A00AA4A60 /* Sources */,
+				56BD4EDA1CF3046A00AA4A60 /* Frameworks */,
+				271126A41FFC16280062388D /* ShellScript */,
+				56BD4EDB1CF3046A00AA4A60 /* Resources */,
+				5EDF9E181D81B3DD004DD547 /* ShellScript */,
+				E2838D1BF47665D09B67E27B /* [CP] Embed Pods Frameworks */,
+				271126A31FFC0F180062388D /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Missito;
+			productName = Missito;
+			productReference = 56BD4EDD1CF3046A00AA4A60 /* Missito.app */;
+			productType = "com.apple.product-type.application";
+		};
+		56BD4EF21CF3046A00AA4A60 /* MissitoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 56BD4F0A1CF3046B00AA4A60 /* Build configuration list for PBXNativeTarget "MissitoTests" */;
+			buildPhases = (
+				56BD4EEF1CF3046A00AA4A60 /* Sources */,
+				56BD4EF01CF3046A00AA4A60 /* Frameworks */,
+				56BD4EF11CF3046A00AA4A60 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				56BD4EF51CF3046A00AA4A60 /* PBXTargetDependency */,
+			);
+			name = MissitoTests;
+			productName = MissitoTests;
+			productReference = 56BD4EF31CF3046A00AA4A60 /* MissitoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		56BD4EFD1CF3046A00AA4A60 /* MissitoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 56BD4F0D1CF3046B00AA4A60 /* Build configuration list for PBXNativeTarget "MissitoUITests" */;
+			buildPhases = (
+				56BD4EFA1CF3046A00AA4A60 /* Sources */,
+				56BD4EFB1CF3046A00AA4A60 /* Frameworks */,
+				56BD4EFC1CF3046A00AA4A60 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				56BD4F001CF3046A00AA4A60 /* PBXTargetDependency */,
+			);
+			name = MissitoUITests;
+			productName = MissitoUITests;
+			productReference = 56BD4EFE1CF3046A00AA4A60 /* MissitoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		56BD4ED51CF3046A00AA4A60 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Missito GmbH";
+				TargetAttributes = {
+					56BD4EDC1CF3046A00AA4A60 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = WN2D4ZFEKU;
+						LastSwiftMigration = 0800;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+							com.apple.Siri = {
+								enabled = 0;
+							};
+						};
+					};
+					56BD4EF21CF3046A00AA4A60 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = L49NKV5DRH;
+						LastSwiftMigration = 0800;
+						TestTargetID = 56BD4EDC1CF3046A00AA4A60;
+					};
+					56BD4EFD1CF3046A00AA4A60 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = L49NKV5DRH;
+						LastSwiftMigration = 0800;
+						TestTargetID = 56BD4EDC1CF3046A00AA4A60;
+					};
+				};
+			};
+			buildConfigurationList = 56BD4ED81CF3046A00AA4A60 /* Build configuration list for PBXProject "Missito" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 56BD4ED41CF3046A00AA4A60;
+			productRefGroup = 56BD4EDE1CF3046A00AA4A60 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				56BD4EDC1CF3046A00AA4A60 /* Missito */,
+				56BD4EF21CF3046A00AA4A60 /* MissitoTests */,
+				56BD4EFD1CF3046A00AA4A60 /* MissitoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		56BD4EDB1CF3046A00AA4A60 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E291FDC1D440DA5000116DD /* HipsterScriptPro.otf in Resources */,
+				5E22F9801D831E0F009176B5 /* Auth.storyboard in Resources */,
+				7B3CF36B1F542E9F00F7E062 /* ChatSectionHeader.xib in Resources */,
+				BF490C791F4D96F300A2572F /* OutgoingContactChatCell.xib in Resources */,
+				7B786E191F30C5DA0038C5D7 /* 163-papua-new-guinea.png in Resources */,
+				7B3FB9BA1F39A74700469DCD /* icons.xcassets in Resources */,
+				7B52DFC51F30904900B0E3C0 /* sf-ui-text-italic.otf in Resources */,
+				5EC8A5BC1D422E2E0096B1A0 /* FontAwesome.otf in Resources */,
+				BF31064F1F750E8200672BAE /* OutgoingVideoChatCell.xib in Resources */,
+				BF0F1C591F753C96009EF27C /* IncomingVideoChatCell.xib in Resources */,
+				5E22F9831D831E1C009176B5 /* Chats.storyboard in Resources */,
+				5E22F98C1D831E29009176B5 /* Main.storyboard in Resources */,
+				7BADAAD11F4B27840085A122 /* IncomingImageChatCell.xib in Resources */,
+				5E22F9861D831E20009176B5 /* Contacts.storyboard in Resources */,
+				BFE3C2611F4C229700825517 /* OutgoingAudioChatCell.xib in Resources */,
+				BF490C7F1F4D971000A2572F /* IncomingContactChatCell.xib in Resources */,
+				7B52DFC41F30904900B0E3C0 /* sf-ui-display-regular.otf in Resources */,
+				7B52DFC61F30904900B0E3C0 /* vagrundschriftdot-regular.otf in Resources */,
+				5EA197B71D6F38CC000FFC75 /* Mountains.jpg in Resources */,
+				5ECFBF141CF5D309003B9F47 /* DiallingCodes.plist in Resources */,
+				7B52DFC31F30904900B0E3C0 /* sf-ui-display-light.otf in Resources */,
+				5E22F98F1D831E2D009176B5 /* Settings.storyboard in Resources */,
+				56BD4EEA1CF3046A00AA4A60 /* Assets.xcassets in Resources */,
+				BF91C45E1F4D620C00BF7B6B /* IncomingMapChatCell.xib in Resources */,
+				BFE3C25D1F4C1F0500825517 /* OutgoingMapChatCell.xib in Resources */,
+				7BADAAE51F4B3E720085A122 /* OutgoingTextChatCell.xib in Resources */,
+				7B66EBAE1F3CB30B00313BFD /* avatar_placeholder.png in Resources */,
+				BFFCF57C1F4ECE3800A6B65E /* IncomingAudioChatCell.xib in Resources */,
+				AA716384204A92CE00B3CCB5 /* InviteView.xib in Resources */,
+				7BADAACC1F4AF04E0085A122 /* IncomingTextChatCell.xib in Resources */,
+				7B3CF3631F4B497A00F7E062 /* OutgoingImageChatCell.xib in Resources */,
+				BF47FC901F31B5BE00B65D75 /* Flags.plist in Resources */,
+				7B3FB9BC1F3B6B1C00469DCD /* UserInfoView.xib in Resources */,
+				5E22F9891D831E24009176B5 /* Launch Screen.storyboard in Resources */,
+				7B66EBAA1F3B708700313BFD /* ava_sample.jpeg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56BD4EF11CF3046A00AA4A60 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56BD4EFC1CF3046A00AA4A60 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		271126A31FFC0F180062388D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\"";
+		};
+		271126A41FFC16280062388D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [ \"${CONFIGURATION}\" == \"AppStore\" ]; then\ncp -r \"${PROJECT_DIR}/GoogleService-Info-Prod.plist\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app/GoogleService-Info.plist\"\n\necho \"Production plist copied\"\n\nelif [ \"${CONFIGURATION}\" == \"Debug Dev\" ]; then\n\ncp -r \"${PROJECT_DIR}/GoogleService-Info-Dev.plist\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app/GoogleService-Info.plist\"\n\necho \"Development plist copied\"\nfi";
+		};
+		5EDF9E181D81B3DD004DD547 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#!/bin/bash\nbuildNumber=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"$INFOPLIST_FILE\")\nbuildNumber=$(($buildNumber + 1))\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $buildNumber\" \"$INFOPLIST_FILE\"\n#sh \"$SRCROOT/Missito/TestFairy/upload-dsym.sh\" ccb54bf45836feda0b665c29525b32f95ce771ff";
+		};
+		E2838D1BF47665D09B67E27B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Missito/Pods-Missito-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/CocoaLumberjack/CocoaLumberjack.framework",
+				"${BUILT_PRODUCTS_DIR}/CryptoSwift/CryptoSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/DateToolsSwift/DateToolsSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/FaceAware/FaceAware.framework",
+				"${BUILT_PRODUCTS_DIR}/FontAwesome.swift/FontAwesome_swift.framework",
+				"${BUILT_PRODUCTS_DIR}/Gloss/Gloss.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/JSONWebToken/JWT.framework",
+				"${BUILT_PRODUCTS_DIR}/KeychainSwift/KeychainSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/M13ProgressSuite/M13ProgressSuite.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/MQTTClient/MQTTClient.framework",
+				"${BUILT_PRODUCTS_DIR}/NSDate+TimeAgo/NSDate_TimeAgo.framework",
+				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SignalProtocolC/SignalProtocolC.framework",
+				"${BUILT_PRODUCTS_DIR}/URITemplate/URITemplate.framework",
+				"${BUILT_PRODUCTS_DIR}/libPhoneNumber-iOS/libPhoneNumber_iOS.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaLumberjack.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CryptoSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DateToolsSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FaceAware.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FontAwesome_swift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Gloss.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JWT.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KeychainSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/M13ProgressSuite.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MQTTClient.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NSDate_TimeAgo.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SignalProtocolC.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/URITemplate.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/libPhoneNumber_iOS.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Missito/Pods-Missito-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EA50CA9C3941ACA1BAB6437D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Missito-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		56BD4ED91CF3046A00AA4A60 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF1982AE1EE6F78C005C8371 /* LocalMessageStatus.swift in Sources */,
+				BF2725501F29D0CB00119F0E /* ProgressDelegate.swift in Sources */,
+				7B3B5AC01ECC964300DE8256 /* PreKeyData.swift in Sources */,
+				BF27254E1F29CF8400119F0E /* ProgressViewController.swift in Sources */,
+				BFFCF5821F4ED3D100A6B65E /* AudioPlayerView.swift in Sources */,
+				7BADAAC81F4AEFE60085A122 /* BaseChatCell.swift in Sources */,
+				7B3B5AC21ECCA69700DE8256 /* SessionData.swift in Sources */,
+				BF3374621F13A8FD0047863A /* RealmLocation.swift in Sources */,
+				BF71E7B61F55926200F2AD9D /* BubbleUIImageView.swift in Sources */,
+				BF321B161F029AFF00051461 /* MissitoAttachment.swift in Sources */,
+				7BEA32222077B21A00672248 /* MessageSenderService.swift in Sources */,
+				5E2947DA1D391071003BC793 /* BrokerConnection.swift in Sources */,
+				7B6B4E231F45F08B00F485F5 /* MissitoHelper.swift in Sources */,
+				7BC9B99B1ED5D8F9000D9E35 /* ContactsUpdateMessage.swift in Sources */,
+				BF1EAC771F0FBF0200DAA5BB /* FullScreenImageViewController.swift in Sources */,
+				BF37DF4A1EE536FE00FBFF22 /* RealmMissitoContact.swift in Sources */,
+				BF0E7B121EDD93C8006E265B /* ContactsStatusUpdate.swift in Sources */,
+				5EAEEE6E1D44158500E98310 /* CustomTabBarController.swift in Sources */,
+				7BCE09441EE016D9000B93C1 /* ContactsManager.swift in Sources */,
+				7B3B5AAC1ECB56BD00DE8256 /* SignalProto.m in Sources */,
+				5E4B6AB61D423C0A00468E22 /* UITabBarController+Extension.swift in Sources */,
+				BF33021D1F222FEB005963C3 /* Debouncer.swift in Sources */,
+				7B3266FB1FE1910E00B288DC /* SwiftFlow.m in Sources */,
+				BF2725521F29D6B600119F0E /* SendInvitesProgressHandler.swift in Sources */,
+				BF26BC0E1EF9043000634DCC /* OfflineContact.swift in Sources */,
+				BF33746A1F13B1410047863A /* MissitoContact.swift in Sources */,
+				BF31064C1F73B8A600672BAE /* SeparatorlessTableViewCell.swift in Sources */,
+				5EB2383E1D5DF1D3001EB3C2 /* MissitoContactCell.swift in Sources */,
+				BF203C301F20E0F7003302F0 /* DeleteAudioContainerView.swift in Sources */,
+				7B2E8C3F1F43410400C29947 /* RealmConversation.swift in Sources */,
+				BF3374681F13ACC40047863A /* RealmString.swift in Sources */,
+				BF0E7B0C1EDD5D66006E265B /* ContactStatus.swift in Sources */,
+				BF15E6941F2891450085B4E3 /* InviteContactsTableViewController.swift in Sources */,
+				56BD4EE11CF3046A00AA4A60 /* AppDelegate.swift in Sources */,
+				7B857F631EB8E150003C6AA8 /* KeyChainHelper.swift in Sources */,
+				BF0EB6DB1F345D84002E13CE /* MissitoVerificationCodeView.swift in Sources */,
+				7B230AE61E7953DC00A49562 /* BrokerMessage.swift in Sources */,
+				BF1C9A171EF29D2400E84D0C /* CloudTokenUpdate.swift in Sources */,
+				7B857F581EB77B16003C6AA8 /* IdentityData.swift in Sources */,
+				BF0DE5831FDEC222006220B1 /* CustomControllerTitleView.swift in Sources */,
+				BF3F91F21F0E1DBB007E94EF /* UpdatedMessages.swift in Sources */,
+				7B07C0371FF3B40A00D7B3D6 /* DecryptionCallback.m in Sources */,
+				BF61A9361F0A70B70079857B /* MessageBody.swift in Sources */,
+				7B07C0301FF2ABEE00D7B3D6 /* ProgressUpdatable.swift in Sources */,
+				5EDCA8211CF6FD64001DFEC3 /* CountryPickerController.swift in Sources */,
+				5E4B217B1CF59A1F00CED4E4 /* CountryCell.swift in Sources */,
+				7BADAADD1F4B313B0085A122 /* OutgoingChatMessage.swift in Sources */,
+				7B3CF3651F4DC6EF00F7E062 /* UIHelper.swift in Sources */,
+				5ECBC1A91D6311AB008C28D7 /* NotificationBubble.swift in Sources */,
+				BF15E6901F273B800085B4E3 /* PhoneBookNumber.swift in Sources */,
+				5ECBC1BE1D63368B008C28D7 /* ChatController.swift in Sources */,
+				BF3374601F13A8F30047863A /* RealmAttachmentContact.swift in Sources */,
+				BF203C331F20E185003302F0 /* EqualizerView.swift in Sources */,
+				BF321B1A1F039EF600051461 /* MissitoImage.swift in Sources */,
+				7BADAAE11F4B3E3F0085A122 /* OutgoingChatCell.swift in Sources */,
+				BF939E381EF6EA430045E917 /* NetworkSettingsViewController.swift in Sources */,
+				7B3CF3691F542E8500F7E062 /* ChatSectionHeader.swift in Sources */,
+				7B3B5ABE1ECC959000DE8256 /* NextOTPKIdData.swift in Sources */,
+				BFD8BDDF1F4C27B800C613CA /* MissitoAudioMessageSlider.swift in Sources */,
+				BF27254C1F29C99700119F0E /* InviteRequest.swift in Sources */,
+				5ECBC1A71D631183008C28D7 /* ChatsCell.swift in Sources */,
+				5E4B6AB41D423C0A00468E22 /* Customizable.swift in Sources */,
+				7BCE09421EDD71FC000B93C1 /* ContactsBlockStatusUpdateMessage.swift in Sources */,
+				7B3CF3671F541D9900F7E062 /* ChatDataSource.swift in Sources */,
+				BF1982AC1EE6B599005C8371 /* Reachability.swift in Sources */,
+				5EEB942D1D6C430200395843 /* MessageTextField.swift in Sources */,
+				7B07C0321FF2B46D00D7B3D6 /* EncrytionDownloadHelper.swift in Sources */,
+				BF3374701F13B15B0047863A /* MissitoVideo.swift in Sources */,
+				5ED21B9F1D1413BB0095FCE4 /* MissitoRealmDB.swift in Sources */,
+				7B3B5ABA1ECC5A1F00DE8256 /* RegistrationIdData.swift in Sources */,
+				5E4B216F1CF5968500CED4E4 /* Utils.swift in Sources */,
+				BFFDFB741EFACD9B004A8835 /* ProfileSettings.swift in Sources */,
+				BF71E7B41F55908700F2AD9D /* BubbleUIView.swift in Sources */,
+				BF1C9A191EF2CDD400E84D0C /* PrivacySettingsTableViewController.swift in Sources */,
+				7BADAAD71F4B2F620085A122 /* BaseChatMessage.swift in Sources */,
+				7BADAAD91F4B30E10085A122 /* ChatMessage.swift in Sources */,
+				7B3B5ABC1ECC8B9A00DE8256 /* LocalSignedPreKeyData.swift in Sources */,
+				BF01CB4C1F50390200763CF1 /* MissitoAudioPlayerManager.swift in Sources */,
+				7B9710181FEC1AA200C79667 /* BaseControl.swift in Sources */,
+				5E6285DA1D7F0B31007C7933 /* RecordingController.swift in Sources */,
+				BFB7E5721F16785B0049CF76 /* MapViewController.swift in Sources */,
+				BF3374641F13A9090047863A /* RealmAudio.swift in Sources */,
+				7BADAADF1F4B31640085A122 /* IncomingChatMessage.swift in Sources */,
+				5EDCA8241CF708AB001DFEC3 /* VerificationController.swift in Sources */,
+				BF6116981ED7573F005102D4 /* RealmMessage.swift in Sources */,
+				7BADAACB1F4AF04E0085A122 /* IncomingTextChatCell.swift in Sources */,
+				7B66EBAC1F3B797C00313BFD /* UserInfoView.swift in Sources */,
+				5EEB942F1D6C72F000395843 /* MessageToolbar.swift in Sources */,
+				7B3B5AC41ECDF61300DE8256 /* DefaultsHelper.swift in Sources */,
+				7B3B5AB61ECB69A700DE8256 /* RealmDbHelper.swift in Sources */,
+				BF0F1C5B1F753CAF009EF27C /* IncomingVideoChatCell.swift in Sources */,
+				BF321B1C1F03A10300051461 /* RealmImage.swift in Sources */,
+				7BCE09501EE179D0000B93C1 /* MissitoMessage.swift in Sources */,
+				BF43AAA91EDC32D5004D484F /* Section.swift in Sources */,
+				BF0E7B141EDDA0A6006E265B /* Array.swift in Sources */,
+				BF47FC941F32112700B65D75 /* CustomHeaderCell.swift in Sources */,
+				5E8F0A7B1DF9A9D000F61F94 /* CoreServices.swift in Sources */,
+				BF31064A1F739B2C00672BAE /* MyProfileTableViewController.swift in Sources */,
+				7BCE094E1EE17913000B93C1 /* MissitoRealmDbHelper.swift in Sources */,
+				7B857F5C1EB77B16003C6AA8 /* SignedPreKeyData.swift in Sources */,
+				7B3B5AB21ECB639100DE8256 /* LocalIdentityData.swift in Sources */,
+				BF321B181F029CA400051461 /* RealmAttachment.swift in Sources */,
+				5EC58F841D410336007F4686 /* ChatsController.swift in Sources */,
+				BF05FFB11ECDC31900966C3D /* MessageIdData.swift in Sources */,
+				BF33021B1F2222F9005963C3 /* TypingMessageCell.swift in Sources */,
+				BF490C7D1F4D970A00A2572F /* IncomingContactChatCell.swift in Sources */,
+				7B43E1771E71A9EB0064E945 /* MQTTMissitoClient.swift in Sources */,
+				BF3106511F750FD000672BAE /* OutgoingVideoChatCell.swift in Sources */,
+				7BEF4A101F7013E8001F1597 /* ContactInfoViewController.swift in Sources */,
+				7B857F5F1EB77BDF003C6AA8 /* OTPReqResponse.swift in Sources */,
+				7B3CF3621F4B497A00F7E062 /* OutgoingImageChatCell.swift in Sources */,
+				BF3124D11EC9A0ED00A20D68 /* OutgoingMessage.swift in Sources */,
+				BF33746C1F13B14B0047863A /* MissitoLocation.swift in Sources */,
+				7B7E6D9B207F60F300C80B0E /* DownloadService.swift in Sources */,
+				5EDCA8221CF6FD64001DFEC3 /* RegisterController.swift in Sources */,
+				AA509B50204584B600FB0E34 /* InvitableProtocol.swift in Sources */,
+				BF15E6921F2782120085B4E3 /* ContactsDataManager.swift in Sources */,
+				7B7E6D9E207F6FCD00C80B0E /* CompositeProgressRepository.swift in Sources */,
+				BFF92EBF1FD806630025C15D /* ChatPresenting.swift in Sources */,
+				5EC58F761D40DD01007F4686 /* ContactsController.swift in Sources */,
+				BF3374661F13A9120047863A /* RealmVideo.swift in Sources */,
+				7B07C02C1FF2AB2500D7B3D6 /* EncryptionHelper.swift in Sources */,
+				7B857F5A1EB77B16003C6AA8 /* OTPKeyData.swift in Sources */,
+				7B2E8C411F44871300C29947 /* MessageType.swift in Sources */,
+				AA7163AA204AFD3D00B3CCB5 /* InviteView.swift in Sources */,
+				BF47FC921F32070100B65D75 /* MissitoSearchBar.swift in Sources */,
+				BFE3C25F1F4C21C500825517 /* OutgoingMapChatCell.swift in Sources */,
+				5E732B521D3933B500B724AE /* AuthService.swift in Sources */,
+				7B3B5AB81ECC59E600DE8256 /* RemoteIdentityData.swift in Sources */,
+				BFFCF57E1F4ECF1400A6B65E /* IncomingAudioChatCell.swift in Sources */,
+				7B857F591EB77B16003C6AA8 /* NewSessionData.swift in Sources */,
+				7B7E6DA02081209D00C80B0E /* NameInputController.swift in Sources */,
+				BF33746E1F13B1530047863A /* MissitoAudio.swift in Sources */,
+				7B3B5AC61ECF4F9200DE8256 /* IncomingMessage.swift in Sources */,
+				7B857F571EB77B16003C6AA8 /* APIRequests.swift in Sources */,
+				7BEA32242077DD5C00672248 /* LoadProgressRepository.swift in Sources */,
+				5E4B6ABC1D424D6400468E22 /* CustomTitleViewLabel.swift in Sources */,
+				7BCE09401ED82B7E000B93C1 /* Constants.swift in Sources */,
+				7BADAAE41F4B3E720085A122 /* OutgoingTextChatCell.swift in Sources */,
+				5EB238401D5DFA18001EB3C2 /* AllContactCell.swift in Sources */,
+				BF203C371F20F9BD003302F0 /* MissitoAudioRecorder.swift in Sources */,
+				7BADAAD01F4B27840085A122 /* IncomingImageChatCell.swift in Sources */,
+				7BCE09461EE016FF000B93C1 /* ContactsStatusManager.swift in Sources */,
+				BF8953581F54123C00144379 /* MissitoContactAvatarView.swift in Sources */,
+				7BE9D34C1F0AA2C4000A01A1 /* AttachmentSpec.swift in Sources */,
+				BF3C44E81ED5A0A300D90D42 /* Contact.swift in Sources */,
+				7B857F611EB77BF2003C6AA8 /* OTPCheckResponse.swift in Sources */,
+				BF6636211EF3C18B000C81B5 /* PrivacyTableViewCell.swift in Sources */,
+				BFEEE8971EE1DC6D00BA4C01 /* MessageStatus.swift in Sources */,
+				BF91C45C1F4D61B600BF7B6B /* IncomingMapChatCell.swift in Sources */,
+				5ECFBF121CF5A665003B9F47 /* PhoneNumberCell.swift in Sources */,
+				7BCE09481EE06CEA000B93C1 /* MessageStatusRequest.swift in Sources */,
+				BFFCF5841F4ED47600A6B65E /* OutgoingAudioChatCell.swift in Sources */,
+				BF490C7B1F4D96FA00A2572F /* OutgoingContactChatCell.swift in Sources */,
+				7BADAADB1F4B310C0085A122 /* TypingChatMessage.swift in Sources */,
+				7BADAAD31F4B27AD0085A122 /* IncomingChatCell.swift in Sources */,
+				7B857F5B1EB77B16003C6AA8 /* OTPKeysData.swift in Sources */,
+				5E4B6AB51D423C0A00468E22 /* UINavigationController+Extension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56BD4EEF1CF3046A00AA4A60 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56BD4EF81CF3046A00AA4A60 /* MissitoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56BD4EFA1CF3046A00AA4A60 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56BD4F031CF3046A00AA4A60 /* MissitoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		56BD4EF51CF3046A00AA4A60 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 56BD4EDC1CF3046A00AA4A60 /* Missito */;
+			targetProxy = 56BD4EF41CF3046A00AA4A60 /* PBXContainerItemProxy */;
+		};
+		56BD4F001CF3046A00AA4A60 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 56BD4EDC1CF3046A00AA4A60 /* Missito */;
+			targetProxy = 56BD4EFF1CF3046A00AA4A60 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5E22F9821D831E0F009176B5 /* Auth.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5E22F9811D831E0F009176B5 /* Base */,
+			);
+			name = Auth.storyboard;
+			path = storyboards;
+			sourceTree = "<group>";
+		};
+		5E22F9851D831E1C009176B5 /* Chats.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5E22F9841D831E1C009176B5 /* Base */,
+			);
+			name = Chats.storyboard;
+			path = storyboards;
+			sourceTree = "<group>";
+		};
+		5E22F9881D831E20009176B5 /* Contacts.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5E22F9871D831E20009176B5 /* Base */,
+			);
+			name = Contacts.storyboard;
+			path = storyboards;
+			sourceTree = "<group>";
+		};
+		5E22F98B1D831E24009176B5 /* Launch Screen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5E22F98A1D831E24009176B5 /* Base */,
+			);
+			name = "Launch Screen.storyboard";
+			path = storyboards;
+			sourceTree = "<group>";
+		};
+		5E22F98E1D831E29009176B5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5E22F98D1D831E29009176B5 /* Base */,
+			);
+			name = Main.storyboard;
+			path = storyboards;
+			sourceTree = "<group>";
+		};
+		5E22F9911D831E2D009176B5 /* Settings.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5E22F9901D831E2D009176B5 /* Base */,
+			);
+			name = Settings.storyboard;
+			path = storyboards;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		56BD4F051CF3046B00AA4A60 /* Debug Prod */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				API_ENDPOINT = "https://api.missito.im";
+				API_KEY = "";
+				BROKER_HOST = mq.missito.im;
+				BROKER_PORT = 8883;
+				BUNDLE_ID = im.missito.Missito;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = L49NKV5DRH;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				NAME_SUFFIX = Missito;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "";
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = "Debug Prod";
+		};
+		56BD4F061CF3046B00AA4A60 /* Release Prod */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				API_ENDPOINT = "https://api.missito.im";
+				API_KEY = "";
+				BROKER_HOST = mq.missito.im;
+				BROKER_PORT = 8883;
+				BUNDLE_ID = im.missito.Missito;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = L49NKV5DRH;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				NAME_SUFFIX = Missito;
+				OTHER_LDFLAGS = "";
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = "Release Prod";
+		};
+		56BD4F081CF3046B00AA4A60 /* Debug Prod */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8CFE51FB6F3D0B86223BF504 /* Pods-Missito.debug prod.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				API_ENDPOINT = "http://192.168.2.42:8080";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				BROKER_HOST = 192.168.2.42;
+				BROKER_PORT = 1883;
+				BROKER_TLS = false;
+				CODE_SIGN_ENTITLEMENTS = Missito/Missito.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = NO;
+				DEVELOPMENT_TEAM = WN2D4ZFEKU;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+				);
+				INFOPLIST_FILE = Missito/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-framework",
+					"\"AVFoundation\"",
+					"-framework",
+					"\"CocoaLumberjack\"",
+					"-framework",
+					"\"CoreMedia\"",
+					"-framework",
+					"\"CoreMotion\"",
+					"-framework",
+					"\"CryptoSwift\"",
+					"-framework",
+					"\"FontAwesome_swift\"",
+					"-framework",
+					"\"JWT\"",
+					"-framework",
+					"\"KeychainSwift\"",
+					"-framework",
+					"\"MQTTClient\"",
+					"-framework",
+					"\"OpenGLES\"",
+					"-framework",
+					"\"Realm\"",
+					"-framework",
+					"\"RealmSwift\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UIKit\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = im.missito;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = Missito/Bridge.h;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = "Debug Prod";
+		};
+		56BD4F091CF3046B00AA4A60 /* Release Prod */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8AEB6F0D3FBA8B9B0227D65C /* Pods-Missito.release prod.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				API_ENDPOINT = "http://192.168.2.42:8080";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				BROKER_HOST = 192.168.2.42;
+				BROKER_PORT = 1883;
+				BROKER_TLS = false;
+				CODE_SIGN_ENTITLEMENTS = Missito/Missito.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = NO;
+				DEVELOPMENT_TEAM = WN2D4ZFEKU;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+				);
+				INFOPLIST_FILE = Missito/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-framework",
+					"\"AVFoundation\"",
+					"-framework",
+					"\"CocoaLumberjack\"",
+					"-framework",
+					"\"CoreMedia\"",
+					"-framework",
+					"\"CoreMotion\"",
+					"-framework",
+					"\"CryptoSwift\"",
+					"-framework",
+					"\"FontAwesome_swift\"",
+					"-framework",
+					"\"JWT\"",
+					"-framework",
+					"\"KeychainSwift\"",
+					"-framework",
+					"\"MQTTClient\"",
+					"-framework",
+					"\"OpenGLES\"",
+					"-framework",
+					"\"Realm\"",
+					"-framework",
+					"\"RealmSwift\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UIKit\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = im.missito;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = Missito/Bridge.h;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = "Release Prod";
+		};
+		56BD4F0B1CF3046B00AA4A60 /* Debug Prod */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MissitoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = de.missito.MissitoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Missito.app/Missito";
+			};
+			name = "Debug Prod";
+		};
+		56BD4F0C1CF3046B00AA4A60 /* Release Prod */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MissitoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = de.missito.MissitoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Missito.app/Missito";
+			};
+			name = "Release Prod";
+		};
+		56BD4F0E1CF3046B00AA4A60 /* Debug Prod */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = MissitoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = de.missito.MissitoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Missito;
+			};
+			name = "Debug Prod";
+		};
+		56BD4F0F1CF3046B00AA4A60 /* Release Prod */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = MissitoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = de.missito.MissitoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Missito;
+			};
+			name = "Release Prod";
+		};
+		5E429D061D391FFD00C7648F /* Debug Beta */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				API_ENDPOINT = "https://api.missito.im";
+				API_KEY = "";
+				BROKER_HOST = mq.missito.im;
+				BROKER_PORT = 8883;
+				BUNDLE_ID = im.missito.Missito.beta;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = L49NKV5DRH;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+					"BETA=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				NAME_SUFFIX = "Missito-B";
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "";
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = "Debug Beta";
+		};
+		5E429D071D391FFD00C7648F /* Debug Beta */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 786A7F919B8592732C787244 /* Pods-Missito.debug beta.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				API_ENDPOINT = "http://192.168.2.42:8080";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				BROKER_HOST = 192.168.2.42;
+				BROKER_PORT = 1883;
+				BROKER_TLS = false;
+				CODE_SIGN_ENTITLEMENTS = Missito/Missito.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = NO;
+				DEVELOPMENT_TEAM = WN2D4ZFEKU;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+				);
+				INFOPLIST_FILE = Missito/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-framework",
+					"\"AVFoundation\"",
+					"-framework",
+					"\"CocoaLumberjack\"",
+					"-framework",
+					"\"CoreMedia\"",
+					"-framework",
+					"\"CoreMotion\"",
+					"-framework",
+					"\"CryptoSwift\"",
+					"-framework",
+					"\"FontAwesome_swift\"",
+					"-framework",
+					"\"JWT\"",
+					"-framework",
+					"\"KeychainSwift\"",
+					"-framework",
+					"\"MQTTClient\"",
+					"-framework",
+					"\"OpenGLES\"",
+					"-framework",
+					"\"Realm\"",
+					"-framework",
+					"\"RealmSwift\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UIKit\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = im.missito;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = Missito/Bridge.h;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = "Debug Beta";
+		};
+		5E429D081D391FFD00C7648F /* Debug Beta */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MissitoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = de.missito.MissitoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Missito.app/Missito";
+			};
+			name = "Debug Beta";
+		};
+		5E429D091D391FFD00C7648F /* Debug Beta */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = MissitoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = de.missito.MissitoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Missito;
+			};
+			name = "Debug Beta";
+		};
+		5E429D161D39208300C7648F /* AppStore */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				API_ENDPOINT = "https://api.missito.im";
+				API_KEY = "";
+				BROKER_HOST = mq.missito.im;
+				BROKER_PORT = 8883;
+				BUNDLE_ID = im.missito.Missito;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = L49NKV5DRH;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				NAME_SUFFIX = Missito;
+				OTHER_LDFLAGS = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = AppStore;
+		};
+		5E429D171D39208300C7648F /* AppStore */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F810CC4EEF8397E21962A5FC /* Pods-Missito.appstore.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				API_ENDPOINT = "http://192.168.2.42:8080";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				BROKER_HOST = 192.168.2.42;
+				BROKER_PORT = 1883;
+				BROKER_TLS = false;
+				CODE_SIGN_ENTITLEMENTS = Missito/Missito.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = NO;
+				DEVELOPMENT_TEAM = WN2D4ZFEKU;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+				);
+				INFOPLIST_FILE = Missito/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-framework",
+					"\"AVFoundation\"",
+					"-framework",
+					"\"CocoaLumberjack\"",
+					"-framework",
+					"\"CoreMedia\"",
+					"-framework",
+					"\"CoreMotion\"",
+					"-framework",
+					"\"CryptoSwift\"",
+					"-framework",
+					"\"FontAwesome_swift\"",
+					"-framework",
+					"\"JWT\"",
+					"-framework",
+					"\"KeychainSwift\"",
+					"-framework",
+					"\"MQTTClient\"",
+					"-framework",
+					"\"OpenGLES\"",
+					"-framework",
+					"\"Realm\"",
+					"-framework",
+					"\"RealmSwift\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UIKit\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = im.missito;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = Missito/Bridge.h;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = AppStore;
+		};
+		5E429D181D39208300C7648F /* AppStore */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MissitoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = de.missito.MissitoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Missito.app/Missito";
+			};
+			name = AppStore;
+		};
+		5E429D191D39208300C7648F /* AppStore */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = MissitoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = de.missito.MissitoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Missito;
+			};
+			name = AppStore;
+		};
+		5E429D1A1D3920AF00C7648F /* Release Beta */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				API_ENDPOINT = "https://api.missito.im";
+				API_KEY = "";
+				BROKER_HOST = mq.missito.im;
+				BROKER_PORT = 8883;
+				BUNDLE_ID = im.missito.Missito.beta;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = L49NKV5DRH;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = "BETA=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				NAME_SUFFIX = "Missito-B";
+				OTHER_LDFLAGS = "";
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = "Release Beta";
+		};
+		5E429D1B1D3920AF00C7648F /* Release Beta */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C2EBFB9E2BC4C423CC9B394 /* Pods-Missito.release beta.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				API_ENDPOINT = "http://192.168.2.42:8080";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				BROKER_HOST = 192.168.2.42;
+				BROKER_PORT = 1883;
+				BROKER_TLS = false;
+				CODE_SIGN_ENTITLEMENTS = Missito/Missito.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = NO;
+				DEVELOPMENT_TEAM = WN2D4ZFEKU;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+				);
+				INFOPLIST_FILE = Missito/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-framework",
+					"\"AVFoundation\"",
+					"-framework",
+					"\"CocoaLumberjack\"",
+					"-framework",
+					"\"CoreMedia\"",
+					"-framework",
+					"\"CoreMotion\"",
+					"-framework",
+					"\"CryptoSwift\"",
+					"-framework",
+					"\"FontAwesome_swift\"",
+					"-framework",
+					"\"JWT\"",
+					"-framework",
+					"\"KeychainSwift\"",
+					"-framework",
+					"\"MQTTClient\"",
+					"-framework",
+					"\"OpenGLES\"",
+					"-framework",
+					"\"Realm\"",
+					"-framework",
+					"\"RealmSwift\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UIKit\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = im.missito;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = Missito/Bridge.h;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = "Release Beta";
+		};
+		5E429D1C1D3920AF00C7648F /* Release Beta */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MissitoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = de.missito.MissitoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Missito.app/Missito";
+			};
+			name = "Release Beta";
+		};
+		5E429D1D1D3920AF00C7648F /* Release Beta */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = MissitoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = de.missito.MissitoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Missito;
+			};
+			name = "Release Beta";
+		};
+		5E429D1E1D3920F500C7648F /* Debug Dev */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				API_ENDPOINT = "https://api.missito.im";
+				API_KEY = W0d8vCL8wX1w78928v2E1lEsrA07QGKE;
+				BROKER_HOST = mq.missito.im;
+				BROKER_PORT = 8883;
+				BUNDLE_ID = im.missito.Missito.dev;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = L49NKV5DRH;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+					"DEV=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				NAME_SUFFIX = "Missito-D";
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "";
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = "Debug Dev";
+		};
+		5E429D1F1D3920F500C7648F /* Debug Dev */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23381716552A41F07107F55E /* Pods-Missito.debug dev.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				API_ENDPOINT = "http://192.168.2.42:8080";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				BROKER_HOST = 192.168.2.42;
+				BROKER_PORT = 1883;
+				BROKER_TLS = false;
+				CODE_SIGN_ENTITLEMENTS = Missito/Missito.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = NO;
+				DEVELOPMENT_TEAM = WN2D4ZFEKU;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+				);
+				INFOPLIST_FILE = Missito/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-framework",
+					"\"AVFoundation\"",
+					"-framework",
+					"\"CocoaLumberjack\"",
+					"-framework",
+					"\"CoreMedia\"",
+					"-framework",
+					"\"CoreMotion\"",
+					"-framework",
+					"\"CryptoSwift\"",
+					"-framework",
+					"\"FontAwesome_swift\"",
+					"-framework",
+					"\"JWT\"",
+					"-framework",
+					"\"KeychainSwift\"",
+					"-framework",
+					"\"MQTTClient\"",
+					"-framework",
+					"\"OpenGLES\"",
+					"-framework",
+					"\"Realm\"",
+					"-framework",
+					"\"RealmSwift\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UIKit\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = im.missito;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = Missito/Bridge.h;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = "Debug Dev";
+		};
+		5E429D201D3920F500C7648F /* Debug Dev */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MissitoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = de.missito.MissitoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Missito.app/Missito";
+			};
+			name = "Debug Dev";
+		};
+		5E429D211D3920F500C7648F /* Debug Dev */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = MissitoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = de.missito.MissitoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Missito;
+			};
+			name = "Debug Dev";
+		};
+		5E429D221D39210600C7648F /* Release Dev */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				API_ENDPOINT = "https://api.missito.im";
+				API_KEY = W0d8vCL8wX1w78928v2E1lEsrA07QGKE;
+				BROKER_HOST = mq.missito.im;
+				BROKER_PORT = 8883;
+				BUNDLE_ID = im.missito.Missito.dev;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = L49NKV5DRH;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = "DEV=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				NAME_SUFFIX = "Missito-D";
+				OTHER_LDFLAGS = "";
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = "Release Dev";
+		};
+		5E429D231D39210600C7648F /* Release Dev */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F51E6B2EAEB86BA77CAC6A65 /* Pods-Missito.release dev.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				API_ENDPOINT = "http://192.168.2.42:8080";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				BROKER_HOST = 192.168.2.42;
+				BROKER_PORT = 1883;
+				BROKER_TLS = false;
+				CODE_SIGN_ENTITLEMENTS = Missito/Missito.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = NO;
+				DEVELOPMENT_TEAM = WN2D4ZFEKU;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+				);
+				INFOPLIST_FILE = Missito/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-framework",
+					"\"AVFoundation\"",
+					"-framework",
+					"\"CocoaLumberjack\"",
+					"-framework",
+					"\"CoreMedia\"",
+					"-framework",
+					"\"CoreMotion\"",
+					"-framework",
+					"\"CryptoSwift\"",
+					"-framework",
+					"\"FontAwesome_swift\"",
+					"-framework",
+					"\"JWT\"",
+					"-framework",
+					"\"KeychainSwift\"",
+					"-framework",
+					"\"MQTTClient\"",
+					"-framework",
+					"\"OpenGLES\"",
+					"-framework",
+					"\"Realm\"",
+					"-framework",
+					"\"RealmSwift\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UIKit\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = im.missito;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = Missito/Bridge.h;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = "Release Dev";
+		};
+		5E429D241D39210600C7648F /* Release Dev */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MissitoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = de.missito.MissitoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Missito.app/Missito";
+			};
+			name = "Release Dev";
+		};
+		5E429D251D39210600C7648F /* Release Dev */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = MissitoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = de.missito.MissitoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Missito;
+			};
+			name = "Release Dev";
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		56BD4ED81CF3046A00AA4A60 /* Build configuration list for PBXProject "Missito" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56BD4F051CF3046B00AA4A60 /* Debug Prod */,
+				5E429D061D391FFD00C7648F /* Debug Beta */,
+				5E429D1E1D3920F500C7648F /* Debug Dev */,
+				56BD4F061CF3046B00AA4A60 /* Release Prod */,
+				5E429D1A1D3920AF00C7648F /* Release Beta */,
+				5E429D221D39210600C7648F /* Release Dev */,
+				5E429D161D39208300C7648F /* AppStore */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Release Prod";
+		};
+		56BD4F071CF3046B00AA4A60 /* Build configuration list for PBXNativeTarget "Missito" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56BD4F081CF3046B00AA4A60 /* Debug Prod */,
+				5E429D071D391FFD00C7648F /* Debug Beta */,
+				5E429D1F1D3920F500C7648F /* Debug Dev */,
+				56BD4F091CF3046B00AA4A60 /* Release Prod */,
+				5E429D1B1D3920AF00C7648F /* Release Beta */,
+				5E429D231D39210600C7648F /* Release Dev */,
+				5E429D171D39208300C7648F /* AppStore */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Release Prod";
+		};
+		56BD4F0A1CF3046B00AA4A60 /* Build configuration list for PBXNativeTarget "MissitoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56BD4F0B1CF3046B00AA4A60 /* Debug Prod */,
+				5E429D081D391FFD00C7648F /* Debug Beta */,
+				5E429D201D3920F500C7648F /* Debug Dev */,
+				56BD4F0C1CF3046B00AA4A60 /* Release Prod */,
+				5E429D1C1D3920AF00C7648F /* Release Beta */,
+				5E429D241D39210600C7648F /* Release Dev */,
+				5E429D181D39208300C7648F /* AppStore */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Release Prod";
+		};
+		56BD4F0D1CF3046B00AA4A60 /* Build configuration list for PBXNativeTarget "MissitoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56BD4F0E1CF3046B00AA4A60 /* Debug Prod */,
+				5E429D091D391FFD00C7648F /* Debug Beta */,
+				5E429D211D3920F500C7648F /* Debug Dev */,
+				56BD4F0F1CF3046B00AA4A60 /* Release Prod */,
+				5E429D1D1D3920AF00C7648F /* Release Beta */,
+				5E429D251D39210600C7648F /* Release Dev */,
+				5E429D191D39208300C7648F /* AppStore */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Release Prod";
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 56BD4ED51CF3046A00AA4A60 /* Project object */;
+}

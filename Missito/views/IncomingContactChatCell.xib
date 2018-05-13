@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="92" id="D3d-eE-FU9" customClass="IncomingContactChatCell" customModule="Missito" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="92"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="D3d-eE-FU9" id="SA7-k8-Yaf">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="91.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XJW-Zh-Fem" customClass="MissitoContactAvatarView" customModule="Missito" customModuleProvider="target">
+                        <rect key="frame" x="12" y="55" width="30" height="30"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="a3F-mG-GyI"/>
+                            <constraint firstAttribute="height" constant="30" id="ku3-at-I0U"/>
+                        </constraints>
+                    </view>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E1p-12-3Cc" customClass="BubbleView" customModule="Missito" customModuleProvider="target">
+                        <rect key="frame" x="54" y="2" width="259.5" height="88"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ok FineOk FineOk FineOk FineOk FineOk FineOk FineOk FineOk FineOk FineOk FineOk FineOk FineOk Fine" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wT4-Hv-c1n">
+                                <rect key="frame" x="78" y="10" width="173.5" height="31.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="contact" translatesAutoresizingMaskIntoConstraints="NO" id="qaE-SE-wyl">
+                                <rect key="frame" x="14" y="10" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="JCp-zE-uf8"/>
+                                    <constraint firstAttribute="width" constant="50" id="KkK-vO-YTv"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColor">
+                                        <color key="value" red="0.7146058058375635" green="0.7146058058375635" blue="0.7146058058375635" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="749" text="Ok fine" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fn6-xq-GFT">
+                                <rect key="frame" x="78" y="41.5" width="172.5" height="15.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" horizontalCompressionResistancePriority="753" text="99:99" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KJV-YU-gUp">
+                                <rect key="frame" x="220.5" y="65" width="30" height="12"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="29.5" id="b2e-lg-C4B"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <color key="textColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="KJV-YU-gUp" secondAttribute="trailing" constant="9" id="2Wx-vx-Xna"/>
+                            <constraint firstItem="KJV-YU-gUp" firstAttribute="top" secondItem="fn6-xq-GFT" secondAttribute="bottom" constant="8" id="2t1-nI-Z9w"/>
+                            <constraint firstAttribute="trailing" secondItem="wT4-Hv-c1n" secondAttribute="trailing" constant="8" id="6GI-qZ-XmV"/>
+                            <constraint firstItem="qaE-SE-wyl" firstAttribute="leading" secondItem="E1p-12-3Cc" secondAttribute="leading" constant="14" id="6ik-pw-rsH"/>
+                            <constraint firstItem="fn6-xq-GFT" firstAttribute="top" secondItem="wT4-Hv-c1n" secondAttribute="bottom" id="AvW-hp-tUN"/>
+                            <constraint firstAttribute="trailing" secondItem="fn6-xq-GFT" secondAttribute="trailing" constant="9" id="FVy-LB-Js2"/>
+                            <constraint firstItem="wT4-Hv-c1n" firstAttribute="leading" secondItem="qaE-SE-wyl" secondAttribute="trailing" constant="14" id="K7c-kG-Nud"/>
+                            <constraint firstItem="fn6-xq-GFT" firstAttribute="leading" secondItem="qaE-SE-wyl" secondAttribute="trailing" constant="14" id="aNM-dv-YPl"/>
+                            <constraint firstItem="KJV-YU-gUp" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="E1p-12-3Cc" secondAttribute="leading" constant="8" id="jLT-Eu-bc9"/>
+                            <constraint firstItem="wT4-Hv-c1n" firstAttribute="top" secondItem="E1p-12-3Cc" secondAttribute="top" priority="999" constant="10" id="n3d-sk-ygA"/>
+                            <constraint firstItem="qaE-SE-wyl" firstAttribute="top" secondItem="E1p-12-3Cc" secondAttribute="top" constant="10" id="qMA-Vb-OD4"/>
+                            <constraint firstAttribute="bottom" secondItem="KJV-YU-gUp" secondAttribute="bottom" constant="11" id="vaB-ho-3MW"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="18"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="E1p-12-3Cc" firstAttribute="leading" secondItem="XJW-Zh-Fem" secondAttribute="trailing" constant="12" id="4TV-bQ-1UR"/>
+                    <constraint firstItem="XJW-Zh-Fem" firstAttribute="top" secondItem="E1p-12-3Cc" secondAttribute="bottom" constant="-35" id="K0N-OW-ceI"/>
+                    <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="E1p-12-3Cc" secondAttribute="trailing" constant="45" id="Y8F-ZC-MYG"/>
+                    <constraint firstAttribute="bottom" secondItem="E1p-12-3Cc" secondAttribute="bottom" constant="2" id="cLJ-xJ-ipV"/>
+                    <constraint firstItem="E1p-12-3Cc" firstAttribute="top" secondItem="SA7-k8-Yaf" secondAttribute="top" constant="2" id="m7c-vz-wcc"/>
+                    <constraint firstItem="XJW-Zh-Fem" firstAttribute="leading" secondItem="SA7-k8-Yaf" secondAttribute="leading" constant="12" id="sHW-PG-YKr"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="avatarView" destination="XJW-Zh-Fem" id="Euo-lq-9P7"/>
+                <outlet property="bubble" destination="E1p-12-3Cc" id="Sdp-KN-18O"/>
+                <outlet property="contactImage" destination="qaE-SE-wyl" id="dI7-nR-xhA"/>
+                <outlet property="contactNameLabel" destination="wT4-Hv-c1n" id="IB2-99-zVL"/>
+                <outlet property="contactPhonesAndEmailsLabel" destination="fn6-xq-GFT" id="jzv-cI-Cma"/>
+                <outlet property="timeLabel" destination="KJV-YU-gUp" id="09h-Bg-1IU"/>
+            </connections>
+            <point key="canvasLocation" x="-82.5" y="224"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="contact" width="15" height="15"/>
+    </resources>
+</document>

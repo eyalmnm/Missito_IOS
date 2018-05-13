@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="58" id="eAI-mk-3cl" customClass="IncomingAudioChatCell" customModule="Missito" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="337" height="58"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="eAI-mk-3cl" id="HDB-Zd-Htf">
+                <rect key="frame" x="0.0" y="0.0" width="337" height="57.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dkK-O4-uLd" customClass="AudioPlayerView" customModule="Missito" customModuleProvider="target">
+                        <rect key="frame" x="54" y="2" width="212" height="54"/>
+                        <subviews>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q26-Hg-WL8">
+                                <rect key="frame" x="3" y="3" width="48" height="48"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="Af3-rF-BDb"/>
+                                    <constraint firstAttribute="width" constant="48" id="K0j-Mi-Qdy"/>
+                                </constraints>
+                                <state key="normal" title="&gt;"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="24"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="play:" destination="dkK-O4-uLd" eventType="touchUpInside" id="xsP-UF-i8b"/>
+                                </connections>
+                            </button>
+                            <view clipsSubviews="YES" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="XQL-ab-39x" customClass="NVActivityIndicatorView" customModule="NVActivityIndicatorView">
+                                <rect key="frame" x="7" y="7" width="40" height="40"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" notEnabled="YES"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="RCx-QV-bvG"/>
+                                    <constraint firstAttribute="width" constant="40" id="c5J-vi-f96"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                        <color key="value" red="0.80304366352944168" green="0.80304366352944168" blue="0.80304366352944168" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="typeName" value="lineSpinFadeLoader"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="99:99" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kCR-N1-4ik">
+                                <rect key="frame" x="172" y="31" width="30" height="12"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="12" id="1bc-4L-kKy"/>
+                                    <constraint firstAttribute="width" constant="30" id="GGO-KP-vdd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="28r-69-lbw" customClass="MissitoAudioMessageSlider" customModule="Missito" customModuleProvider="target">
+                                <rect key="frame" x="63" y="11" width="141" height="21"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="SdZ-4Q-VHC"/>
+                                </constraints>
+                                <color key="minimumTrackTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="maximumTrackTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="thumbTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="slide:" destination="dkK-O4-uLd" eventType="valueChanged" id="VsV-RY-qqE"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="99:99" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BoU-vk-u08">
+                                <rect key="frame" x="60" y="34" width="24" height="8"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="8" id="eJd-OY-RwA"/>
+                                    <constraint firstAttribute="width" constant="24" id="zuE-O3-QxA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="8"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="28r-69-lbw" firstAttribute="top" secondItem="dkK-O4-uLd" secondAttribute="top" constant="11" id="16x-xf-Wah"/>
+                            <constraint firstAttribute="bottom" secondItem="BoU-vk-u08" secondAttribute="bottom" constant="12" id="4lb-7s-WV0"/>
+                            <constraint firstItem="q26-Hg-WL8" firstAttribute="top" secondItem="dkK-O4-uLd" secondAttribute="top" constant="3" id="7bm-qq-r4f"/>
+                            <constraint firstItem="kCR-N1-4ik" firstAttribute="top" secondItem="28r-69-lbw" secondAttribute="bottom" id="APD-fE-KgN"/>
+                            <constraint firstItem="28r-69-lbw" firstAttribute="leading" secondItem="q26-Hg-WL8" secondAttribute="trailing" constant="14" id="G5G-si-3NY"/>
+                            <constraint firstAttribute="trailing" secondItem="28r-69-lbw" secondAttribute="trailing" constant="10" id="S6H-Za-wvX"/>
+                            <constraint firstItem="q26-Hg-WL8" firstAttribute="leading" secondItem="dkK-O4-uLd" secondAttribute="leading" constant="3" id="ZPD-xv-mOd"/>
+                            <constraint firstAttribute="bottom" secondItem="kCR-N1-4ik" secondAttribute="bottom" constant="11" id="bE2-O2-m4n"/>
+                            <constraint firstItem="BoU-vk-u08" firstAttribute="leading" secondItem="q26-Hg-WL8" secondAttribute="trailing" constant="9" id="fPF-ef-UKI"/>
+                            <constraint firstAttribute="bottom" secondItem="q26-Hg-WL8" secondAttribute="bottom" constant="3" id="nPK-jM-nkH"/>
+                            <constraint firstAttribute="trailing" secondItem="kCR-N1-4ik" secondAttribute="trailing" constant="10" id="wmN-0M-rBw"/>
+                            <constraint firstItem="kCR-N1-4ik" firstAttribute="leading" secondItem="BoU-vk-u08" secondAttribute="trailing" constant="88" id="wxI-KA-SxF"/>
+                            <constraint firstItem="XQL-ab-39x" firstAttribute="centerY" secondItem="q26-Hg-WL8" secondAttribute="centerY" id="x2d-hQ-zj0"/>
+                            <constraint firstItem="XQL-ab-39x" firstAttribute="centerX" secondItem="q26-Hg-WL8" secondAttribute="centerX" id="xVR-aJ-Txb"/>
+                            <constraint firstItem="kCR-N1-4ik" firstAttribute="top" secondItem="28r-69-lbw" secondAttribute="bottom" id="zDh-G8-Kdn"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="27"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <outlet property="currentTimeLabel" destination="BoU-vk-u08" id="gKY-q5-xvG"/>
+                            <outlet property="loadingIndicatorView" destination="XQL-ab-39x" id="083-dR-Ocu"/>
+                            <outlet property="playButton" destination="q26-Hg-WL8" id="pZN-9Z-Yko"/>
+                            <outlet property="slider" destination="28r-69-lbw" id="Gf0-Cf-GJQ"/>
+                        </connections>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MLG-6D-eQs" customClass="MissitoContactAvatarView" customModule="Missito" customModuleProvider="target">
+                        <rect key="frame" x="12" y="24" width="30" height="30"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="1QX-pk-9Pr"/>
+                            <constraint firstAttribute="width" constant="30" id="H2j-64-hgd"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="MLG-6D-eQs" firstAttribute="leading" secondItem="HDB-Zd-Htf" secondAttribute="leading" constant="12" id="4cG-oX-2yX"/>
+                    <constraint firstItem="dkK-O4-uLd" firstAttribute="leading" secondItem="MLG-6D-eQs" secondAttribute="trailing" constant="12" id="OWj-DO-Kmd"/>
+                    <constraint firstAttribute="bottom" secondItem="MLG-6D-eQs" secondAttribute="bottom" constant="3.5" id="RnU-c5-El1"/>
+                    <constraint firstItem="dkK-O4-uLd" firstAttribute="top" secondItem="HDB-Zd-Htf" secondAttribute="top" constant="2" id="Wgc-E5-AIY"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="dkK-O4-uLd" secondAttribute="trailing" constant="45" id="rrS-Xq-Cwe"/>
+                    <constraint firstAttribute="bottom" secondItem="dkK-O4-uLd" secondAttribute="bottom" constant="2" id="t9r-Tv-iig"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="audioPlayerView" destination="dkK-O4-uLd" id="lXo-ss-PfA"/>
+                <outlet property="avatarView" destination="MLG-6D-eQs" id="aVD-ox-Djg"/>
+                <outlet property="bubble" destination="dkK-O4-uLd" id="8wb-HM-Bhn"/>
+                <outlet property="timeLabel" destination="kCR-N1-4ik" id="nLP-gx-rCA"/>
+            </connections>
+            <point key="canvasLocation" x="-96" y="-21"/>
+        </tableViewCell>
+    </objects>
+</document>

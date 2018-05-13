@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Chats-->
+        <scene sceneID="9M8-vj-27K">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Chats" id="Veq-oS-7bp" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Chats" id="Ia0-pU-oLt"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ToR-7M-jbr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="507" y="0.0"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="g54-gs-aWH">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Settings" id="7P5-Oc-5ZQ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Settings" id="Z7g-05-cSU"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ids-DK-3ZF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="518" y="78"/>
+        </scene>
+        <!--Contacts-->
+        <scene sceneID="oNs-uG-OLN">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Contacts" id="HhI-EM-pec" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Contacts" id="75x-rv-etQ"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="y7V-dg-m7G" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="521" y="-76"/>
+        </scene>
+        <!--Custom Tab Bar Controller-->
+        <scene sceneID="yl2-sM-qoP">
+            <objects>
+                <tabBarController id="49e-Tb-3d3" customClass="CustomTabBarController" customModule="Missito" customModuleProvider="target" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" translucent="NO" id="W28-zg-YXA">
+                        <rect key="frame" x="0.0" y="975" width="768" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="tintColor" red="0.39607843139999999" green="0.73333333329999995" blue="0.85490196080000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <color key="selectedImageTintColor" red="0.47058823529411764" green="0.72549019607843135" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </tabBar>
+                    <connections>
+                        <outlet property="bar" destination="W28-zg-YXA" id="awl-kX-aiq"/>
+                        <segue destination="Veq-oS-7bp" kind="relationship" relationship="viewControllers" id="dqE-Iz-YGy"/>
+                        <segue destination="HhI-EM-pec" kind="relationship" relationship="viewControllers" id="XeW-xL-QHU"/>
+                        <segue destination="7P5-Oc-5ZQ" kind="relationship" relationship="viewControllers" id="I1O-cL-vE1"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
+                <navigationItem title="Title" id="px1-Fx-Fvf"/>
+            </objects>
+            <point key="canvasLocation" x="0.0" y="0.0"/>
+        </scene>
+        <!--Welcome to Missito-->
+        <scene sceneID="Irc-oF-JBU">
+            <objects>
+                <viewController storyboardIdentifier="NameInputController" id="4dJ-ec-Pri" customClass="NameInputController" customModule="Missito" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ayZ-RY-gtm"/>
+                        <viewControllerLayoutGuide type="bottom" id="ACY-jH-8ha"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Vau-jx-N1X">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your name here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ozm-71-TCH">
+                                <rect key="frame" x="16" y="96" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please enter your name so we know how to address you." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OFx-zL-nvm">
+                                <rect key="frame" x="16" y="134" width="343" height="38.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="OFx-zL-nvm" firstAttribute="leading" secondItem="Vau-jx-N1X" secondAttribute="leadingMargin" id="2qe-mw-Nmw"/>
+                            <constraint firstItem="Ozm-71-TCH" firstAttribute="leading" secondItem="Vau-jx-N1X" secondAttribute="leadingMargin" id="Anq-7P-COH"/>
+                            <constraint firstItem="OFx-zL-nvm" firstAttribute="top" secondItem="Ozm-71-TCH" secondAttribute="bottom" constant="8" id="OJv-N5-dyq"/>
+                            <constraint firstItem="Ozm-71-TCH" firstAttribute="top" secondItem="ayZ-RY-gtm" secondAttribute="bottom" constant="32" id="ZuU-bT-olI"/>
+                            <constraint firstItem="OFx-zL-nvm" firstAttribute="trailing" secondItem="Vau-jx-N1X" secondAttribute="trailingMargin" id="aOx-Ow-y6o"/>
+                            <constraint firstItem="Ozm-71-TCH" firstAttribute="trailing" secondItem="Vau-jx-N1X" secondAttribute="trailingMargin" id="urp-H5-Sli"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Welcome to Missito" id="wf3-To-koC">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="checkmark" id="jZS-hN-lJy">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="onCheck:" destination="4dJ-ec-Pri" id="N14-Ii-Blk"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="nameTextField" destination="Ozm-71-TCH" id="n6j-hw-wtF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YVz-MW-LoD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="882.39999999999998" y="727.28635682158927"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="KKJ-FV-42M">
+            <objects>
+                <navigationController storyboardIdentifier="nameInput" automaticallyAdjustsScrollViewInsets="NO" id="s0O-Pb-piN" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="LPp-4a-tTA">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.23137254900000001" green="0.5568627451" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="4dJ-ec-Pri" kind="relationship" relationship="rootViewController" id="t8s-aj-IHy"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V6X-6c-H6i" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-58.399999999999999" y="726.38680659670172"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="checkmark" width="37" height="37"/>
+    </resources>
+    <color key="tintColor" red="0.39607843139999999" green="0.73333333329999995" blue="0.85490196080000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+</document>
